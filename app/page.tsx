@@ -279,7 +279,7 @@ export default function Home() {
  {/* ================= ÉTAPES (animation) ================= */}
       <StepsTypingClient />
  {/* ================= TARIFS ================= */}
-      <section className="py-18 px-4 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-20 px-6 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-6xl mx-auto">
           <AnimatedFadeIn>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
