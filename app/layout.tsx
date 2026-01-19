@@ -1,8 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-<head>
-  <link rel="icon" href="/favicon.ico" />
-</head>
+
 export const metadata: Metadata = {
   title: "Externalisation de la paie | GPE Solutions",
   description:
@@ -15,6 +13,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
   },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +25,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <body className="min-h-screen bg-white text-gray-900">{children}</body>
+      <body className="min-h-screen bg-white text-gray-900">
+        {children}
+      </body>
     </html>
   );
 }
