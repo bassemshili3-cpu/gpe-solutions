@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Externalisation de la paie | GPE Solutions",
@@ -30,4 +31,5 @@ export default function RootLayout({
       </body>
     </html>
   );
+  <Analytics/>
 }
