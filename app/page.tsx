@@ -24,17 +24,26 @@ export default function Home() {
 />
   return (
    <main className="min-h-screen bg-white text-gray-800">
+
       {/* ================= HEADER ================= */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900">
-  {/* texture subtile */}
-  <div className="pointer-events-none absolute inset-0 opacity-[0.08] bg-[radial-gradient(circle_at_30%_20%,white,transparent_60%)]" />
+      <header className="relative overflow-hidden bg-gradient-to-br from-blue-800 via-blue-900 to-indigo-700">
+  {/* Aurora / mesh living background */}
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute -top-32 -left-32 h-[520px] w-[520px] rounded-full bg-blue-400/15 blur-3xl animate-floatSlow" />
+    <div className="absolute -bottom-40 -right-40 h-[560px] w-[560px] rounded-full bg-indigo-400/18 blur-3xl animate-floatSlow2" />
+    <div className="absolute top-10 right-10 h-[380px] w-[380px] rounded-full bg-sky-300/10 blur-3xl animate-floatSlow3" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.10),transparent_55%)]" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(99,102,241,0.18),transparent_55%)]" />
+  </div>
+
+  {/* Fine highlight line */}
+  <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
 
   <div className="relative z-10 mx-auto max-w-6xl px-6 py-28 text-center">
-{/* AURA lumineuse derrière le titre */}
+    {/* Title group */}
     <div className="relative inline-block">
-      <div className="absolute inset-0 blur-2xl rounded-full bg-black-0/0 animate-pulse" />
-
-      {/* TITRE BLANC PUR */}
+      
+      {/* Titre blanc, net, premium */}
       <h1 className="title-light text-5xl md:text-6xl font-extrabold tracking-tight leading-none">
   GPE Solutions
 </h1>
@@ -44,9 +53,12 @@ export default function Home() {
     <p className="mt-3 text-sm md:text-base text-blue-100/90">
       Externalisation de la paie, DSN et accompagnement social
     </p>
+
+    {/* Petit “sheen” discret sous le texte (sans rajouter de contenu) */}
+    <div className="mx-auto mt-8 h-px w-48 bg-gradient-to-r from-transparent via-white/35 to-transparent" />
   </div>
 
-  {/* séparateur bas discret */}
+  {/* Séparateur bas discret */}
   <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 </header>
 
