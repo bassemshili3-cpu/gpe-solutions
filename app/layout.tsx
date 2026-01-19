@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-
+<head>
+  <link rel="icon" href="/favicon.ico" />
+</head>
 export const metadata: Metadata = {
   title: "Externalisation de la paie | GPE Solutions",
   description:
@@ -24,4 +26,3 @@ export default function RootLayout({
     </html>
   );
 }
-
