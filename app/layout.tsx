@@ -28,8 +28,8 @@ export default function RootLayout({
     <html lang="fr">
       <body className="min-h-screen bg-white text-gray-900">
         {children}
+          <Analytics/>
       </body>
     </html>
   );
-  <Analytics/>
 }
