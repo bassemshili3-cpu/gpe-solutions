@@ -39,7 +39,7 @@ export default function Home() {
   {/* Fine highlight line */}
   <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
 
-  <div className="relative z-10 mx-auto max-w-6xl px-6 py-22 text-center">
+  <div className="relative z-10 mx-auto max-w-6xl px-6 py-18 text-center">
     {/* Title group */}
     <div className="relative inline-block">
       
