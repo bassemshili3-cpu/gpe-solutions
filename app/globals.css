@@ -40,25 +40,6 @@ body {
   border-radius: 10px;
 }
 
-/* =========================================================
-   HERO – FOND BLEU METALLISE (DOSE)
-   ========================================================= */
-
-.metal-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-
-  background: linear-gradient(
-    135deg,
-    #071a33 0%,
-    #0b2e5f 45%,
-    #081d3a 100%
-  );
-
-  filter: saturate(1.15) contrast(1.05);
-}
 
 /* micro-texture */
 .metal-bg::before {
@@ -272,6 +253,41 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .title-light {
     animation: none;
+  }
+}
+@keyframes floatSlow {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(24px, -18px, 0) scale(1.04); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes floatSlow2 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-18px, 22px, 0) scale(1.03); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes floatSlow3 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-14px, -10px, 0) scale(1.02); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+
+.animate-floatSlow  { animation: floatSlow  10s ease-in-out infinite; }
+.animate-floatSlow2 { animation: floatSlow2 12s ease-in-out infinite; }
+.animate-floatSlow3 { animation: floatSlow3 14s ease-in-out infinite; }
+
+@keyframes breatheGlow {
+  0%   { opacity: 0.70; filter: blur(34px); }
+  50%  { opacity: 1;    filter: blur(42px); }
+  100% { opacity: 0.70; filter: blur(34px); }
+}
+.animate-breatheGlow { animation: breatheGlow 3.8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-floatSlow,
+  .animate-floatSlow2,
+  .animate-floatSlow3,
+  .animate-breatheGlow {
+    animation: none !important;
   }
 }
 
