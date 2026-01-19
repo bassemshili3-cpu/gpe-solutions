@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description:
     "Externalisez votre paie simplement. Bulletins, DSN, formalités sociales. Service humain, réactif et sécurisé.",
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: "https://gpe-solutions.fr",
+  },
   openGraph: {
     title: "GPE Solutions – Externalisation de la paie",
     description:
@@ -16,20 +19,17 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
-  },
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="fr">
-      <body className="min-h-screen bg-white text-gray-900">
-        {children}
-          <Analytics/>
-      </body>
-    </html>
-  );
-}
+     },
+      }
+      export default function RootLayout({
+        children,
+      }: Readonly<{ children: React.ReactNode }>) {
+        return (
+          <html lang="fr">
+            <body className="min-h-screen bg-white text-gray-900">
+              {children}
+ <Analytics />
+            </body>
+          </html>
+        );
+   }

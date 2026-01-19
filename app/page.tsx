@@ -3,8 +3,27 @@ import ContactForm from "@/components/ContactForm";
 import StepsTypingClient from "../components/StepsTypingClient";
 
 export default function Home() {
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      name: "GPE Solutions",
+      url: "https://gpe-solutions.fr",
+      description:
+        "Externalisation de la paie, DSN et accompagnement social pour TPE, PME et grandes entreprises.",
+      areaServed: "FR",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "contact@gpe-solutions.fr",
+      },
+    }),
+  }}
+/>
   return (
-    <main className="min-h-screen bg-white text-gray-800">
+   <main className="min-h-screen bg-white text-gray-800">
       {/* ================= HEADER ================= */}
       <header className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900">
   {/* texture subtile */}
