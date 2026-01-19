@@ -26,7 +26,7 @@ export default function Home() {
    <main className="min-h-screen bg-white text-gray-800">
 
       {/* ================= HEADER ================= */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-blue-800 via-blue-900 to-indigo-700">
+      <header className="relative overflow-hidden bg-gradient-to-br from-blue-800 via-blue-900 to-indigo-600">
   {/* Aurora / mesh living background */}
   <div className="pointer-events-none absolute inset-0">
     <div className="absolute -top-32 -left-32 h-[520px] w-[520px] rounded-full bg-blue-400/15 blur-3xl animate-floatSlow" />
