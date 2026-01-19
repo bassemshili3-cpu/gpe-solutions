@@ -7,7 +7,7 @@ export default function PolitiqueConfidentialitePage() {
         </h1>
 
         <p className="mt-6 text-sm text-gray-600">
-          Dernière mise à jour : (date à compléter)
+          Dernière mise à jour :  19/01/2026
         </p>
 
         <section className="mt-10 space-y-6 text-sm leading-relaxed">
@@ -27,10 +27,9 @@ export default function PolitiqueConfidentialitePage() {
             par :
           </p>
           <ul className="list-disc pl-5">
-            <li>Nom du consultant : (Nom et prénom à compléter)</li>
             <li>Statut : Salarié porté</li>
-            <li>Société de portage salarial : (Nom de la société)</li>
-            <li>Adresse de la société de portage : (Adresse complète)</li>
+            <li>Société de portage salarial : </li>
+            <li>Adresse de la société de portage : </li>
             <li>Email de contact : contact@gpe-solutions.fr</li>
           </ul>
 
