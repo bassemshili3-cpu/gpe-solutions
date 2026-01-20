@@ -12,12 +12,12 @@ const STEPS: Step[] = [
   {
     n: "1",
     title: "Vous remplissez le formulaire",
-    desc: "Nous prenons connaissance de votre situation pour vous proposer une approche sur-mesure.",
+    desc: "Nous prenons connaissance de votre situation.",
   },
   {
     n: "2",
     title: "Un expert vous rappelle",
-    desc: "Un échange rapide pour cadrer vos besoins, vos outils et vos priorités.",
+    desc: "Un échange rapide pour cadrer vos besoins, et vos priorités.",
   },
   {
     n: "3",
@@ -27,12 +27,12 @@ const STEPS: Step[] = [
   {
     n: "4",
     title: "Production & DSN",
-    desc: "Bulletins, contrôles, DSN : tout est préparé de façon fiable et conforme.",
-  },
+    desc: "Nous préparons Bulletins, contrôles, et la DSN.",
+},
   {
     n: "5",
-    title: "Validation & suivi",
-    desc: "Vous validez. Nous assurons ensuite le suivi, les ajustements et la continuité.",
+    title: "Validation",
+    desc: "Nous réalisons des ajustements si nécessaire, puis vous validez.",
   },
 ];
 
@@ -100,8 +100,7 @@ export default function StepsTypingClient() {
 
     return () => clearInterval(t);
   }, [activeIndex]);
-
-  return (
+ return (
     <section ref={sectionRef} className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
@@ -171,13 +170,8 @@ export default function StepsTypingClient() {
               </div>
 
               <h3 className="mt-5 text-xl font-bold text-gray-900">
-                Une paie fiable, sans surcharge mentale
+                Une paie fiable et sans stress
               </h3>
-
-              <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                Rigueur, transparence et confidentialité : vous gagnez en conformité et en sérénité,
-                tout en gardant la visibilité sur ce qui est fait.
-              </p>
 
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="rounded-2xl border border-blue-100 bg-white p-4">
