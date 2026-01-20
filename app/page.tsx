@@ -92,7 +92,7 @@ export default function Home() {
                 Gestionnaire de paie qualifié
               </h3>
               <p className="mt-2 text-sm text-blue-800/80">
-                Un interlocuteur unique, rigoureux et réactif.
+                Un interlocuteur unique et réactif.
               </p>
             </div>
 
@@ -140,10 +140,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="mt-6 text-lg font-semibold text-blue-900">
-                Coûts optimisés
+               Vos coûts de gestion optimisés
               </h3>
               <p className="mt-2 text-sm text-blue-800/80">
-                Tarification claire et adaptée à votre structure.
+                Tarifs adaptés à votre structure.
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
               GPE Solutions accompagne les entreprises à chaque étape de leur
-              développement, avec une approche fiable, humaine et conforme.
+              développement, avec une approche fiable.
             </p>
           </AnimatedFadeIn>
 
@@ -201,7 +201,7 @@ export default function Home() {
               {
                 tag: "Organisation",
                 title: "Dirigeants & RH",
-                desc: "Vous déléguez la paie tout en conservant visibilité et maîtrise des décisions.",
+                desc: "Déléguez nous votre paie tout en conservant un contrôle des décisions.",
               },
               {
                 tag: "Sécurité",
@@ -235,10 +235,6 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
               Pourquoi choisir GPE Solutions ?
             </h2>
-            <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
-              Externaliser la paie, ce n’est pas seulement gagner du temps. C’est
-              confier des données sensibles à un partenaire de confiance.
-            </p>
           </AnimatedFadeIn>
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -247,9 +243,8 @@ export default function Home() {
                 Une expertise dédiée
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Vous échangez avec un gestionnaire de paie identifié, impliqué
-                dans votre dossier. Chaque situation est analysée avec rigueur
-                et discernement.
+                Vous échangez avec un gestionnaire de paie impliqué
+                dans votre dossier. 
               </p>
             </div>
 
@@ -275,14 +270,14 @@ export default function Home() {
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 De la collecte des éléments variables à la DSN, chaque étape est
-                sécurisée et contrôlée. Objectif : réduire le risque d’erreur et
-                assurer la conformité.
+                sécurisée et contrôlée. L'bjectif est de réduire le risque d’erreur et
+                d'assurer la conformité.
               </p>
             </div>
 
             <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
               <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Une relation claire et transparente
+                Une relation transparente
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Vous savez ce qui est fait, quand et pourquoi. Nous restons
@@ -314,12 +309,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <AnimatedFadeIn>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              GPE Solutions, une tarification accessible
+              Notre tarification est accessible
             </h2>
-            <p className="mt-3 text-center text-gray-600">
-              Une offre claire, pensée pour les TPE, PME et entreprises en
-              croissance.
-            </p>
           </AnimatedFadeIn>
 
           <div className="mt-12 flex justify-center">
