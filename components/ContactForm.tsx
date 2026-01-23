@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useFormState } from "react-dom";
 
 type FormState = {
   raisonSociale: string;
@@ -148,33 +149,33 @@ export default function ContactForm() {
             )}
           </div>
 
-          {/* Effectif */}
-          <div>
-            <label className={labelBase} htmlFor="effectif">
-              Effectif <span className="text-red-500">*</span>
-            </label>
-            <select
-              id="effectif"
-              name="effectif"
-              value={form.effectif}
-              onChange={(e) => setField("effectif", e.target.value)}
-              className={`${inputBase} ${
-                errors.effectif ? "border-red-300 focus:border-red-500 focus:ring-red-200/60" : "border-slate-200"
-              }`}
-            >
-              <option value="">Sélectionnez</option>
-              <option value="0-20">0–20 salariés</option>
-              <option value="21-50">21–50 salariés</option>
-              <option value="51-100">51–100 salariés</option>
-              <option value="101-200">101–200 salariés</option>
-              <option value="200+">200+ salariés</option>
-            </select>
-            {errors.effectif ? (
-              <p className={errorBase}>{errors.effectif}</p>
-            ) : (
-              <p className={hintBase}>Pour estimer votre volume de paie.</p>
-            )}
-          </div>
+            {/* Effectif */}
+<div>
+  <label className={labelBase} htmlFor="effectif">
+    Effectif <span className="text-red-500">*</span>
+  </label>
+
+  <input
+    type="number"
+    id="effectif"
+    name="effectif"
+    placeholder="Ex : 12"
+    min="1"
+    value={form.effectif}
+    onChange={(e) => setField("effectif", e.target.value)}
+    className={`${inputBase} ${
+      errors.effectif
+        ? "border-red-300 focus:border-red-500 focus:ring-red-200/60"
+        : "border-slate-200 focus:border-blue-500 focus:ring-blue-500/20"
+    }`}
+  />
+
+  {errors.effectif ? (
+    <p className={errorBase}>{errors.effectif}</p>
+  ) : (
+    <p className={hintBase}>Indiquez le nombre de salariés dans votre entreprise.</p>
+  )}
+</div>
 
           {/* Email */}
           <div>

@@ -56,7 +56,7 @@ export default function Home() {
     <img
       src="/icon.png"
       alt="GPE Solutions"
-      className="relative h-13 w-13 object-contain"
+      className="flex items-center gap-3 mt-3 relative h-16 w-16 object-contain" 
       draggable={false}
     />
   </div>
@@ -76,7 +76,7 @@ export default function Home() {
       </div>
 
       {/* Center tagline */}
-      <div className="mt-10 text-center">
+      <div className="mt-1 text-center">
         <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
           Votre service paie, DSN, & accompagnement social
         </p>
@@ -91,7 +91,7 @@ export default function Home() {
   <section className="relative z-10 py-16 px-6 bg-transparent">
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
-        <h2 className="mt-5 text-3xl md:text-5xl font-bold text-white/95 mb-10">
+        <h2 className="mt-1 text-3xl md:text-5xl font-bold text-white/95 mb-10">
           Externalisez votre paie de A à Z
         </h2>
       </AnimatedFadeIn>
@@ -149,10 +149,10 @@ export default function Home() {
       </div>
 
       {/* Logo Sage (iconic) */}
-      <div className="mt-16 flex flex-col items-center text-center">
+      <div className="mt-20 flex flex-col items-center text-center">
         <div className="relative">
           <div className="pointer-events-none absolute -inset-6 rounded-none bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl animate-pulse" />
-          <div className="absolute -inset-[4px] rounded-none bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-600 opacity-70 blur-[0.5px]" />
+          <div className="absolute -inset-[4px] rounded-none bg-gradient-to-br from-blue-900 via-white to-violet-900 opacity-70 blur-[0.5px]" />
 
           <div className="group relative flex h-20 w-38 items-center justify-center rounded-none">
             <div className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -245,6 +245,7 @@ export default function Home() {
                   "Support réactif & accompagnement dédié",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3">
+
                     <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-blue-700">
                       ✓
                     </span>
@@ -257,8 +258,19 @@ export default function Home() {
         </AnimatedFadeIn>
       </div>
     </div>
+        {/* CTA */}
+        <div className="mt-10 flex justify-center">
+          <a
+            href="#contact"
+            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-purple-400 to-blue-800 px-10 py-4 text-base font-semibold text-white shadow-lg transition-all hover:brightness-110 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+          >
+            J’externalise avec GPE Solutions
+            <span className="transition group-hover:translate-x-0.5">→</span>
+          </a>
+        </div>
   </section>
 </div>
+
 
 {/* ================= À QUI S’ADRESSE ================= */}
 <section className="py-16 px-6 bg-white">
