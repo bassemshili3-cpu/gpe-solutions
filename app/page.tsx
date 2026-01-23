@@ -79,15 +79,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="hidden md:block text-xs text-white/55" />
-    </div>
-
-    {/* Center tagline */}
-    <div className="mt-24 text-center">
-      <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
-        Votre service paie, DSN, & accompagnement social
-      </p>
-
       <div className="mx-auto mt-8 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
     </div>
   </div>
@@ -100,8 +91,7 @@ export default function Home() {
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
         <h2 className="mt-10 text-3xl md:text-5xl font-bold text-white/95 mb-10">
-          Externalisez votre paie de A à Z
-        </h2>
+          Votre service d'externalisation de la paie & DSN        </h2>
       </AnimatedFadeIn>
 
       <div className="mt-16 mb-10 grid grid-cols-1 md:grid-cols-3 gap-8">
