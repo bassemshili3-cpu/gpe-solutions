@@ -149,7 +149,7 @@ export default function Home() {
       </div>
 
       {/* Logo Sage (iconic) */}
-      <div className="mt-20 flex flex-col items-center text-center">
+      <div className="mt-23 flex flex-col items-center text-center">
         <div className="relative">
           <div className="pointer-events-none absolute -inset-6 rounded-none bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl animate-pulse" />
           <div className="absolute -inset-[4px] rounded-none bg-gradient-to-br from-blue-900 via-white to-violet-900 opacity-70 blur-[0.5px]" />
@@ -170,7 +170,7 @@ export default function Home() {
       </div>
 
       <AnimatedFadeIn>
-        <p className="mt-7 text-lg md:text-xl text-white/80 leading-[1.6] max-w-3xl mx-auto text-center">
+        <p className="mt-10 text-lg md:text-xl text-white/80 leading-[1.6] max-w-3xl mx-auto text-center">
           Nous travaillons sur le logiciel{" "}
           <span className="font-semibold text-white">Sage</span>, une référence dans le milieu de la paie.
         </p>
@@ -262,7 +262,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <a
             href="#contact"
-            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-purple-400 to-blue-800 px-10 py-4 text-base font-semibold text-white shadow-lg transition-all hover:brightness-110 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-indigo-300 to-white-800 px-10 py-4 text-base font-bold text-grey-400 shadow-lg transition-all hover:brightness-110 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
           >
             J’externalise avec GPE Solutions
             <span className="transition group-hover:translate-x-0.5">→</span>
