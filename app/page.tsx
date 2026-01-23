@@ -26,15 +26,15 @@ export default function Home() {
 
   return (
 
-   <main className="min-h-screen bg-white text-gray-800">
+   <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
 <ClearHashOnLoad />
 
     {/* ================= TOP WRAPPER (fond global jusqu'aux tarifs) ================= */}
-<div className="relative overflow-hidden bg-gradient-to-b from-blue-950 via-blue-950/85 to-blue-50">
+<div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/85 to-blue-50">
   {/* Mesh / aurora global */}
   <div className="pointer-events-none absolute inset-0">
     <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-500/12 blur-3xl" />
-    <div className="absolute -top-32 right-[-120px] h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl" />
+    <div className="absolute -top-32 right-0 translate-x-24 h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl" />
     <div className="absolute top-24 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-violet-500/8 blur-3xl" />
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.10),transparent_60%)]" />
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(99,102,241,0.10),transparent_55%)]" />
@@ -60,7 +60,7 @@ export default function Home() {
     <img
       src="/icon.png"
       alt="GPE Solutions"
-      className="mt-3 relative h-22 w-22 object-contain" 
+      className="mt-2 relative h-20 w-20 object-contain" 
       draggable={false}
     />
   </div>
