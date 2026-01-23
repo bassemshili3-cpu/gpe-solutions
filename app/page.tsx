@@ -66,13 +66,13 @@ export default function Home() {
       <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50">
         <div className="max-w-5xl mx-auto text-center">
           <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-5xl font-bold text-blue-900 mb-10">
+            <h2 className="mt-5 text-3xl md:text-5xl font-bold text-blue-900 mb-10">
               Externalisez votre paie de A à Z
             </h2>
           </AnimatedFadeIn>
 
           {/* Cartes A-Z (INTERACTIVES) */}
-          <div className="mb-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-20 mb-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Carte 1 */}
             <div className="group rounded-3xl border border-blue-100 bg-blue-50/60 p-10 text-center shadow-sm transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-blue-200">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-blue-700 transition group-hover:scale-[1.03]">
@@ -147,237 +147,228 @@ export default function Home() {
               </p>
             </div>
           </div>
+{/* Logo Sage (iconic) */}
+<div className="mt-20 flex flex-col items-center text-center">
+  <div className="relative">
+    {/* Halo doux */}
+    <div className="pointer-events-none absolute -inset-6 rounded-full bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl animate-pulse" />
+
+    {/* Ring gradient */}
+    <div className="absolute -inset-[3px] rounded-full bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-600 opacity-70 blur-[0.5px]" />
+
+    {/* Pastille */}
+    <div className="group relative flex h-28 w-32 items-center justify-center rounded-full bg-white shadow-sm">
+      {/* Mini shine au hover */}
+      <div className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="absolute -left-10 top-1/2 h-24 w-24 -translate-y-1/2 rotate-12 bg-white/30 blur-xl" />
+      </div>
+
+      <img
+        src="/Sage_logo.svg" 
+        alt="Sage"
+        className="h-7 w-auto object-contain"
+        draggable={false}
+      />
+    </div>
+  </div>
+</div>
+
 
           <AnimatedFadeIn>
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Nous utilisons les outils les plus performants du marché pour vous
-              garantir un service de qualité.
-            </p>
-          </AnimatedFadeIn>
+<p className="mt-7 text-base md:text-xl text-gray-600 leading-[1.6] max-w-3xl mx-auto text-center">
+  Nous travaillons sur le logiciel{" "}
+  <span className="font-semibold text-gray-900">Sage</span>, une référence dans le milieu de la paie.
+</p>
 
-          {/* CTA A-Z */}
-          <AnimatedFadeIn>
-            <div className="mt-10 flex flex-col items-center justify-center gap-3">
-              <a
-                href="#contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
-              >
-                Vérifier si GPE Solutions est adapté à mon entreprise
-                <span className="transition group-hover:translate-x-0.5">→</span>
-              </a>
-              <span className="text-xs text-gray-500">
-                Réponse sous 24h • Sans engagement
-              </span>
-            </div>
-          </AnimatedFadeIn>
+        </AnimatedFadeIn>
         </div>
       </section>
+       {/* ================= TARIFS ================= */}
+<section className="py-20 px-6 bg-gradient-to-b from-blue-50 to-white">
+  <div className="max-w-6xl mx-auto">
+    <AnimatedFadeIn>
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
+        Grille tarifaire: 
+      </h2>
+    </AnimatedFadeIn>
 
-      {/* ================= À QUI S’ADRESSE ================= */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              À qui s’adresse GPE Solutions ?
-            </h2>
-            <p className="mt-4 text-center text-gray-600 max-w-3xl mx-auto">
-              GPE Solutions accompagne les entreprises à chaque étape de leur
-              développement, avec une approche fiable.
-            </p>
-          </AnimatedFadeIn>
+    <div className="mt-12 flex justify-center">
+      <AnimatedFadeIn>
+        <div className="relative w-full max-w-md">
+          {/* Glow background (fidèle à l’original) */}
+          <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl" />
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                tag: "Démarrage",
-                title: "TPE & premier salarié",
-                desc: "Vous recrutez ? Nous sécurisons les bases de la paie et des obligations sociales dès le départ.",
-              },
-              {
-                tag: "Croissance",
-                title: "PME en développement",
-                desc: "Quand l’effectif augmente, la paie se complexifie. Nous structurons un process clair et maîtrisé.",
-              },
-              {
-                tag: "Organisation",
-                title: "Dirigeants & RH",
-                desc: "Déléguez nous votre paie tout en conservant un contrôle des décisions.",
-              },
-              {
-                tag: "Sécurité",
-                title: "Besoin de fiabilité",
-                desc: "Paie conforme, contrôlée, avec un traitement strict des données.",
-              },
-            ].map((c) => (
-              <div
-                key={c.title}
-                className="group rounded-3xl border border-blue-100 bg-gradient-to-b from-blue-50/60 to-white p-7 shadow-sm transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-blue-200"
-              >
-                <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-900 border border-blue-100 transition group-hover:bg-white">
-                  {c.tag}
-                </div>
-                <h3 className="mt-5 text-base font-bold text-gray-900">
-                  {c.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                  {c.desc}
-                </p>
+          <div className="relative overflow-hidden rounded-[32px] border border-blue-200 bg-white p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)] transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(2,6,23,0.14)]">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-900">
+              <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
+              Tarifs transparents
+            </div>
+
+            {/* Tarifs (grille compacte) */}
+            <div className="mt-6">
+              <div className="text-sm font-semibold text-gray-500">
+                Tarif / bulletin
               </div>
-            ))}
+
+              <div className="mt-5 rounded-2xl border border-blue-100 bg-gradient-to-b from-white to-blue-50/40 p-3">
+                <div className="grid grid-cols-[1fr_auto] items-center gap-3 px-3 pb-2 text-[11px] font-semibold uppercase tracking-wide text-blue-900/60">
+                  <span>Effectif</span>
+                  <span className="text-right">Prix</span>
+                </div>
+
+                <div className="space-y-2">
+                  {[
+                    ["1 à 5 salariés", "28 €"],
+                    ["6 à 15 salariés", "26 €"],
+                    ["16 à 30 salariés", "23 €"],
+                    ["31 à 50 salariés", "21 €"],
+                    ["50+ salariés", "18 €"],
+                  ].map(([effectif, prix]) => (
+                    <div
+                      key={effectif}
+                      className="grid grid-cols-[1fr_auto] items-center gap-3 rounded-xl border border-blue-100 bg-white/80 px-3 py-2.5 shadow-sm"
+                    >
+                      <span className="text-sm font-medium text-gray-800">
+                        {effectif}
+                      </span>
+
+                      <span className="justify-self-end">
+                        <span className="inline-flex items-center rounded-lg bg-gradient-to-br from-blue-700 to-indigo-700 px-2.5 py-1 text-sm font-bold text-white shadow-sm">
+                          {prix}
+                        </span>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Inclus */}
+            <ul className="mt-8 space-y-3 text-sm text-gray-700">
+              {[
+                "Bulletins de paie conformes",
+                "Déclaration sociale nominative (DSN)",
+                "Formalités embauche / départ",
+                "Support réactif & accompagnement dédié",
+              ].map((t) => (
+                <li key={t} className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-blue-700">
+                    ✓
+                  </span>
+                  {t}
+                </li>
+              ))}
+            </ul>
+
           </div>
         </div>
-      </section>
+      </AnimatedFadeIn>
+    </div>
+  </div>
+</section>
+{/* ================= À QUI S’ADRESSE ================= */}
+<section className="py-16 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <AnimatedFadeIn>
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
+        À qui s’adresse GPE Solutions ?
+      </h2>
 
-      {/* ================= POURQUOI GPE SOLUTIONS ================= */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              Pourquoi choisir GPE Solutions ?
-            </h2>
-          </AnimatedFadeIn>
+      {/* Ligne principale */}
+      <p className="mt-12 text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+        Pour toute entreprise qui souahite une paie fiable, maîtrisée, et sans charge mentale.
+      </p>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Une expertise dédiée
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Vous échangez avec un gestionnaire de paie impliqué
-                dans votre dossier. 
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Une confidentialité totale
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Les données de paie sont parmi les plus sensibles d’une
-                entreprise. Elles sont traitées avec discrétion, dans le respect
-                strict des obligations de confidentialité et du cadre RGPD.
-                <br />
-                <br />
-                Aucune revente, aucun usage détourné, aucun accès non justifié :
-                vos informations restent strictement entre vos mains et celles
-                de GPE Solutions.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Des processus fiables et maîtrisés
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                De la collecte des éléments variables à la DSN, chaque étape est
-                sécurisée et contrôlée. L'bjectif est de réduire le risque d’erreur et
-                d'assurer la conformité.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                Une relation transparente
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Vous savez ce qui est fait, quand et pourquoi. Nous restons
-                disponibles pour tout renseignement nécessaire.
-              </p>
-            </div>
+      {/* Pills / badges gradient 2026 */}
+      <div className="mt-13 flex flex-wrap justify-center gap-4">
+        {[
+          "TPE & premiers salariés",
+          "PME en croissance",
+          "Dirigeants & RH",
+          "Entreprises exigeantes",
+        ].map((label) => (
+          <div
+            key={label}
+            className="rounded-full border border-blue-100 bg-gradient-to-br from-blue-50 to-white px-5 py-2.5 text-sm font-semibold text-blue-900 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            {label}
           </div>
+        ))}
+      </div>
+    </AnimatedFadeIn>
+  </div>
+</section>
 
-          <AnimatedFadeIn>
-            <div className="mt-10 flex flex-col items-center justify-center gap-3">
-              <a
-                href="#contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
-              >
-                Échanger en toute confidentialité
-                <span className="transition group-hover:translate-x-0.5">→</span>
-              </a>
-              <span className="text-xs text-gray-500">
-                Données traitées de façon strictement confidentielle
-              </span>
-            </div>
-          </AnimatedFadeIn>
-        </div>
-      </section>
+     {/* ================= POURQUOI GPE SOLUTIONS ================= */}
+<section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50">
+  <div className="max-w-6xl mx-auto">
+    <AnimatedFadeIn>
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
+        Pourquoi choisir GPE Solutions ?
+      </h2>
+    </AnimatedFadeIn>
+
+    <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          Une expertise dédiée
+        </h3>
+        <p className="text-sm text-gray-600 leading-relaxed">
+          Un interlocuteur unique, impliqué dans votre dossier, pour une paie
+          claire et bien suivie.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          Une confidentialité totale
+        </h3>
+        <p className="text-sm text-gray-600 leading-relaxed">
+          Conscients de l'importance de la confidentalité en paie, nous traitons cette dernière en toute discrétion.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          Des process fiables
+        </h3>
+        <p className="text-sm text-gray-600 leading-relaxed">
+          Variables → bulletins → DSN : chaque étape est contrôlée pour limiter
+          les erreurs et rester conforme.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
+        <h3 className="text-lg font-bold text-gray-900 mb-3">
+          Une relation transparente
+        </h3>
+        <p className="text-sm text-gray-600 leading-relaxed">
+          Vous savez où on en est, ce qui est fait, et quand. Réponse rapide en
+          cas de question.
+        </p>
+      </div>
+    </div>
+
+    <AnimatedFadeIn>
+      <div className="mt-10 flex flex-col items-center justify-center gap-3">
+        <a
+          href="#contact"
+          className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
+        >
+          Échanger en toute confidentialité
+          <span className="transition group-hover:translate-x-0.5">→</span>
+        </a>
+        <span className="text-xs text-gray-500">
+          Données traitées de façon strictement confidentielle
+        </span>
+      </div>
+    </AnimatedFadeIn>
+  </div>
+</section>
+
  {/* ================= ÉTAPES (animation) ================= */}
       <StepsTypingClient />
- {/* ================= TARIFS ================= */}
-      <section className="py-20 px-6 bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              Notre tarification est accessible
-            </h2>
-          </AnimatedFadeIn>
-
-          <div className="mt-12 flex justify-center">
-            <AnimatedFadeIn>
-              <div className="relative w-full max-w-md">
-                <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl" />
-
-                <div className="relative overflow-hidden rounded-[32px] border border-blue-200 bg-white p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)] transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(2,6,23,0.14)]">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-900">
-                    <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
-                    Offre à partir de
-                  </div>
-
-                  <div className="mt-6">
-                    <div className="text-sm font-semibold text-gray-500">
-                      à partir de
-                    </div>
-                    <div className="mt-2 flex items-end justify-center gap-2">
-                      <span className="text-5xl font-extrabold tracking-tight text-blue-900">
-                        12€
-                      </span>
-                      <span className="mb-2 text-lg font-bold text-blue-900">
-                        *
-                      </span>
-                      <span className="mb-2 text-sm text-gray-500">
-                        / salarié
-                      </span>
-                    </div>
-                  </div>
-
-                  <ul className="mt-8 space-y-3 text-sm text-gray-700">
-                    {[
-                      "Bulletins de paie conformes",
-                      "Déclaration sociale nominative (DSN)",
-                      "Formalités embauche / départ",
-                      "Support réactif & accompagnement dédié",
-                    ].map((t) => (
-                      <li key={t} className="flex items-start gap-3">
-                        <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-blue-700">
-                          ✓
-                        </span>
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-10">
-                    <a
-                      href="#contact"
-                      className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
-                    >
-                      Demander un devis
-                      <span className="transition group-hover:translate-x-0.5">
-                        →
-                      </span>
-                    </a>
-                    <p className="mt-4 text-center text-xs text-gray-500 italic">
-                      * Les tarifs varient selon l’effectif et la complexité du
-                      dossier.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedFadeIn>
-          </div>
-        </div>
-      </section>
 
       {/* ================= CONTACT ================= */}
       <section
