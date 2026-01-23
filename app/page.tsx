@@ -1,6 +1,7 @@
 import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import StepsTypingClient from "../components/StepsTypingClient";
+import ClearHashOnLoad from "../components/ClearHashOnLoad";
 
 export default function Home() {
   <script
@@ -22,8 +23,11 @@ export default function Home() {
     }),
   }}
 />
+
   return (
+
    <main className="min-h-screen bg-white text-gray-800">
+<ClearHashOnLoad />
 
     {/* ================= TOP WRAPPER (fond global jusqu'aux tarifs) ================= */}
 <div className="relative overflow-hidden bg-gradient-to-b from-blue-950 via-blue-950/85 to-blue-50">
