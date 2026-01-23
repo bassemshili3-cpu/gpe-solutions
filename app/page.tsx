@@ -282,7 +282,7 @@ export default function Home() {
 
       {/* Ligne principale */}
       <p className="mt-12 text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
-        Pour toute entreprise qui souahite une paie fiable, maîtrisée, et sans charge mentale.
+        Pour toute entreprise qui souhaite une paie fiable, maîtrisée, et sans charge mentale.
       </p>
 
       {/* Pills / badges gradient 2026 */}
