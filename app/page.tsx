@@ -1,7 +1,7 @@
 import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import StepsTypingClient from "../components/StepsTypingClient";
-import ClearHashOnLoad from "../components/ClearHashOnLoad";
+import ClearHashOnLoad from "@/components/ClearHashOnLoad";
 
 export default function Home() {
   <script
@@ -47,11 +47,11 @@ export default function Home() {
     {/* Fine highlight line (subtile) */}
     <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
 
-    <div className="relative z-10 mx-auto max-w-6xl px-6 pt-10 pb-10">
+    <div className="relative z-10 w-full px-6 pt-4 pb-8">
       {/* Top bar */}
       <div className="flex items-center justify-between">
         {/* Logotype */}
-       <div className="flex items-center gap-1">
+       <div className="flex items-center gap-1 -m1-2">
   <div className="relative flex h-7 w7 items-center justify-center">
     {/* Halo doux */}
     <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
@@ -60,17 +60,17 @@ export default function Home() {
     <img
       src="/icon.png"
       alt="GPE Solutions"
-      className="mt-2 relative h-17 w-17 object-contain" 
+      className="mt-3 relative h-22 w-22 object-contain" 
       draggable={false}
     />
   </div>
 
           <div className="leading-tight">
-            <div className="text-2xl font-extrabold tracking-tight">
+            <div className="text-3xl font-extrabold tracking-tight">
               <span className="text-blue-300">GPE</span>{" "}
               <span className="text-white/95">Solutions</span>
             </div>
-            <div className="text-[14px] font-medium text-white/55">
+            <div className="text-[16px] font-medium text-white/55">
               Gestion Paie Externalisée
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
       </div>
 
       {/* Center tagline */}
-      <div className="mt-8 text-center">
+      <div className="mt-18 text-center">
         <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
           Votre service paie, DSN, & accompagnement social
         </p>
@@ -92,7 +92,7 @@ export default function Home() {
 
   {/* ================= HERO A-Z ================= */}
   {/* NOTE : bg-transparent pour laisser le fond global "porter" */}
-  <section className="relative z-10 py-16 px-6 bg-transparent">
+  <section className="relative z-10 py-6 px-6 bg-transparent">
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
         <h2 className="mt-1 text-3xl md:text-5xl font-bold text-white/95 mb-10">
@@ -266,7 +266,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <a
             href="#contact"
-            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-indigo-400 to-indigo-300 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-900 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
           >
             J’externalise avec GPE Solutions
             <span className="transition group-hover:translate-x-0,5">→</span>
@@ -317,8 +317,7 @@ export default function Home() {
 </div>
 
 <div className="my-14 flex justify-center">
-  <span className="mt-9 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-26 py-4 text-2xl font-semibold text-blue-900 shadow-sm backdrop-blur">
-    <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
+  <span className="mt-9 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-14 py-4 text-2xl font-semibold text-blue-900 shadow-sm backdrop-blur">
     Et concrètement, pourquoi GPE ?
   </span>
 </div>
