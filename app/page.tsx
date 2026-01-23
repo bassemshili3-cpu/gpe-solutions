@@ -170,7 +170,7 @@ export default function Home() {
       </div>
 
       <AnimatedFadeIn>
-        <p className="mt-7 text-base md:text-xl text-white/80 leading-[1.6] max-w-3xl mx-auto text-center">
+        <p className="mt-7 text-lg md:text-xl text-white/80 leading-[1.6] max-w-3xl mx-auto text-center">
           Nous travaillons sur le logiciel{" "}
           <span className="font-semibold text-white">Sage</span>, une référence dans le milieu de la paie.
         </p>
