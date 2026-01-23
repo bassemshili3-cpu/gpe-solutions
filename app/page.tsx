@@ -262,7 +262,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <a
             href="#contact"
-            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-indigo-300 to-white-800 px-10 py-4 text-base font-bold text-grey-400 shadow-lg transition-all hover:brightness-110 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-indigo-400 to-indigo-300 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-110 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
           >
             J’externalise avec GPE Solutions
             <span className="transition group-hover:translate-x-0.5">→</span>
