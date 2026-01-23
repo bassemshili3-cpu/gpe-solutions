@@ -99,7 +99,7 @@ export default function Home() {
   <section className="relative z-10 py-6 px-6 bg-transparent">
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
-        <h2 className="mt-1 text-3xl md:text-5xl font-bold text-white/95 mb-10">
+        <h2 className="mt-10 text-3xl md:text-5xl font-bold text-white/95 mb-10">
           Externalisez votre paie de A à Z
         </h2>
       </AnimatedFadeIn>
