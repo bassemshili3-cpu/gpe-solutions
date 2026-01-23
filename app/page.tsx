@@ -83,7 +83,7 @@ export default function Home() {
     </div>
 
     {/* Center tagline */}
-    <div className="mt-8 text-center">
+    <div className="mt-24 text-center">
       <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
         Votre service paie, DSN, & accompagnement social
       </p>
