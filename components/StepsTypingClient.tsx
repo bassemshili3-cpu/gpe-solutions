@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
+
 type Step = {
   n: string;
   title: string;
@@ -16,8 +17,8 @@ const STEPS: Step[] = [
   },
   {
     n: "2",
-    title: "Un expert vous rappelle",
-    desc: "Un échange rapide pour cadrer vos besoins, et vos priorités.",
+    title: "On vous répond",
+    desc: "Afin de cadrer vos besoins, et vos priorités.",
   },
   {
     n: "3",
@@ -32,7 +33,7 @@ const STEPS: Step[] = [
   {
     n: "5",
     title: "Validation",
-    desc: "Nous réalisons des ajustements si nécessaire, puis vous validez.",
+    desc: "Nous vous envoyons vos bulletins de paie pour validation, avant clôture.",
   },
 ];
 
@@ -101,15 +102,15 @@ export default function StepsTypingClient() {
     return () => clearInterval(t);
   }, [activeIndex]);
  return (
-    <section ref={sectionRef} className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section ref={sectionRef} className="py-20 px-6 bg-gradient-to-b from-indigo-50 via-white to-white">
+      <div className="max-w-6x1 mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
             Les étapes pour externaliser votre paie
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Colonne gauche : étapes */}
           <div className="space-y-4">
             {STEPS.map((s, idx) => {
