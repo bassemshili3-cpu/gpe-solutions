@@ -56,7 +56,7 @@ export default function Home() {
     <img
       src="/icon.png"
       alt="GPE Solutions"
-      className="flex items-center gap-3 mt-3 relative h-16 w-16 object-contain" 
+      className="mt-2 relative h-17 w-17 object-contain" 
       draggable={false}
     />
   </div>
@@ -76,7 +76,7 @@ export default function Home() {
       </div>
 
       {/* Center tagline */}
-      <div className="mt-1 text-center">
+      <div className="mt-8 text-center">
         <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
           Votre service paie, DSN, & accompagnement social
         </p>
