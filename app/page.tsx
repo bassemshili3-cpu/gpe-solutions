@@ -42,53 +42,57 @@ export default function Home() {
     <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent to-white/40" />
   </div>
 
- {/* ================= HEADER ================= */}
-  <header className="relative">
-    {/* Fine highlight line (subtile) */}
-    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+{/* ================= HEADER ================= */}
+<header className="relative">
+  {/* Fine highlight line (subtile) */}
+  <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
 
-    <div className="relative z-10 w-full px-1 pt-3 pb-3">
-      {/* Top bar */}
-      <div className="flex items-center justify-between">
-        {/* Logotype */}
-       <div className="flex items-center gap-1">
-  <div className="relative flex h-7 w7 items-center justify-center">
-    {/* Halo doux */}
-    <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
-
-    {/* Icône */}
-    <img
-      src="/icon.png"
-      alt="GPE Solutions"
-      className="mt-2 relative h-17 w-17 object-contain" 
-      draggable={false}
-    />
-  </div>
-
-          <div className="leading-tight">
-            <div className="text-2xl font-extrabold tracking-tight">
-              <span className="text-blue-300">GPE</span>{" "}
-              <span className="text-white/95">Solutions</span>
-            </div>
-            <div className="text-[14px] font-medium text-white/55">
-              Gestion Paie Externalisée
-            </div>
+  <div className="relative z-10 w-full px-3 pt-3 pb-0">
+    {/* Top bar */}
+    <div className="flex items-center justify-between">
+      {/* Logotype */}
+      <div className="flex items-center gap-3">
+        
+        {/* Texte */}
+        <div className="leading-tight">
+          <div className="text-2xl font-extrabold tracking-tight">
+            <span className="text-blue-300">GPE</span>{" "}
+            <span className="text-white/95">Solutions</span>
+          </div>
+          <div className="text-[14px] font-medium text-white/55">
+            Gestion Paie Externalisée
           </div>
         </div>
 
-        <div className="hidden md:block text-xs text-white/55" />
+        {/* Logo à droite */}
+        <div className="relative flex h-14 w-14 items-center justify-center">
+          {/* Halo doux */}
+          <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
+
+          {/* Icône */}
+          <img
+            src="/icon.png"
+            alt="GPE Solutions"
+            className="relative h-16 w-16 object-contain"
+            draggable={false}
+          />
+        </div>
       </div>
 
-      {/* Center tagline */}
-      <div className="mt-8 text-center">
-        <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
-          Votre service paie, DSN, & accompagnement social
-        </p>
-
-        <div className="mx-auto mt-8 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-      </div>
+      <div className="hidden md:block text-xs text-white/55" />
     </div>
-  </header>
+
+    {/* Center tagline */}
+    <div className="mt-8 text-center">
+      <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-5 text-sm font-semibold text-white/90 shadow-sm backdrop-blur">
+        Votre service paie, DSN, & accompagnement social
+      </p>
+
+      <div className="mx-auto mt-8 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+    </div>
+  </div>
+</header>
+
 
   {/* ================= HERO A-Z ================= */}
   {/* NOTE : bg-transparent pour laisser le fond global "porter" */}
