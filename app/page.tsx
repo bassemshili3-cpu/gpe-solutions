@@ -209,7 +209,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-5 rounded-2xl border border-blue-100 bg-gradient-to-b from-white to-blue-50/40 p-3">
-                  <div className="grid grid-cols-[1fr_auto] items-center gap-3 px-3 pb-2 text-[11px] font-semibold uppercase tracking-wide text-blue-900/60">
+                  <div className="grid grid-cols-[1fr_auto] items-center gap-3 px-3 pb-2 text-[11px] font-semibold uppercase tracking-wide text-blue-700/60">
                     <span>Effectif</span>
                     <span className="text-right">Prix</span>
                   </div>
@@ -231,7 +231,7 @@ export default function Home() {
                         </span>
 
                         <span className="justify-self-end">
-                          <span className="inline-flex items-center rounded-lg bg-gradient-to-br from-blue-700 to-indigo-700 px-2.5 py-1 text-sm font-bold text-white shadow-sm">
+                          <span className="inline-flex items-center rounded-lg bg-gradient-to-br from-blue-800 to-indigo-400 px-2.5 py-1 text-sm font-bold text-white shadow-sm">
                             {prix}
                           </span>
                         </span>
@@ -309,15 +309,15 @@ export default function Home() {
   </div>
 </section>
 
-<div className="my-14 flex justify-center">
+<div className="my-18 flex justify-center">
   <div className="relative h-px w-164">
     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/20 to-transparent" />
     <div className="absolute -inset-x-8 -inset-y-6 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent blur-2xl" />
   </div>
 </div>
 
-<div className="my-14 flex justify-center">
-  <span className="mt-9 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-14 py-4 text-2xl font-semibold text-blue-900 shadow-sm backdrop-blur">
+<div className="my-6 flex justify-center">
+  <span className="mt-2 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-8 py-4 text-xl font-semibold text-blue-900 shadow-sm backdrop-blur">
     Et concrètement, pourquoi GPE ?
   </span>
 </div>
@@ -367,17 +367,13 @@ export default function Home() {
     </div>
 
     <AnimatedFadeIn>
-      <div className="mt-10 flex flex-col items-center justify-center gap-3">
+      <div className="mt-15 flex flex-col items-center justify-center gap-3">
         <a
           href="#contact"
           className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
         >
           Échanger en toute confidentialité
-          <span className="transition group-hover:translate-x-0.5">→</span>
-        </a>
-        <span className="text-xs text-gray-500">
-          Données traitées de façon strictement confidentielle
-        </span>
+         </a>
       </div>
     </AnimatedFadeIn>
   </div>
