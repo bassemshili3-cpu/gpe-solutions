@@ -55,17 +55,17 @@ export default function Home() {
         
         {/* Texte */}
         <div className="leading-tight">
-          <div className="text-2xl font-extrabold tracking-tight">
+          <div className="text-2xl font-extrabold tracking-tight whitespace-nowrap">
             <span className="text-blue-300">GPE</span>{" "}
             <span className="text-white/95">Solutions</span>
           </div>
-          <div className="text-[14px] font-medium text-white/55">
+          <div className="text-[14px] font-medium text-white/55 whitespace-nowrap">
             Gestion Paie Externalisée
           </div>
         </div>
 
         {/* Logo à droite */}
-        <div className="relative flex h-14 w-14 items-center justify-center">
+        <div className="relative flex-shrink-0 h-14 w-14 items-center justify-center">
           {/* Halo doux */}
           <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
