@@ -55,17 +55,17 @@ export default function Home() {
         
         {/* Texte */}
         <div className="leading-tight">
-          <div className="text-2xl font-extrabold tracking-tight whitespace-nowrap">
+          <div className="text-2xl font-extrabold tracking-tight">
             <span className="text-blue-300">GPE</span>{" "}
             <span className="text-white/95">Solutions</span>
           </div>
-          <div className="text-[14px] font-medium text-white/55 whitespace-nowrap">
+          <div className="text-[14px] font-medium text-white/55">
             Gestion Paie Externalisée
           </div>
         </div>
 
         {/* Logo à droite */}
-        <div className="relative flex-shrink-0 h-14 w-14 items-center justify-center">
+        <div className="relative flex h-14 w-14 items-center justify-center">
           {/* Halo doux */}
           <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
@@ -79,10 +79,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      <div className="hidden md:block text-xs text-white/55" />
     </div>
+
   </div>
 </header>
+
 
 
   {/* ================= HERO A-Z ================= */}
@@ -90,10 +92,14 @@ export default function Home() {
   <section className="relative z-10 py-6 px-6 bg-transparent">
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
-        <h2 className="mt-10 text-3xl md:text-5xl font-bold text-white/95 mb-10">
+        <h2 className="mt-20 text-3xl md:text-5xl font-bold text-white/95 mb-10">
           Votre service d'externalisation de la paie & DSN        </h2>
       </AnimatedFadeIn>
 
+      {/* Center tagline */}
+    <div className="mt-19 text-center">
+     <div className="mx-auto mt-8 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+</div>
       <div className="mt-16 mb-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Carte 1 */}
         <div className="group rounded-3xl border border-white/10 bg-white/5 p-10 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20">
