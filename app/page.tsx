@@ -51,7 +51,7 @@ export default function Home() {
     {/* Top bar */}
     <div className="flex items-center justify-between">
       {/* Logotype */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-1">
         
         {/* Texte */}
         <div className="leading-tight">
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         {/* Logo à droite */}
-        <div className="relative flex h-14 w-14 items-center justify-center">
+        <div className="relative h-14 w-14 items-center justify-center">
           {/* Halo doux */}
           <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
@@ -73,7 +73,7 @@ export default function Home() {
           <img
             src="/icon.png"
             alt="GPE Solutions"
-            className="relative h-16 w-16 object-contain"
+            className="relative h-16 w-16 object-contain items-start justify-center"
             draggable={false}
           />
         </div>
@@ -266,7 +266,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <a
             href="#contact"
-            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-900 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-blue-900 via-indigo-700 to-indigo-400 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
           >
             J’externalise avec GPE Solutions
             <span className="transition group-hover:translate-x-0,5">→</span>
