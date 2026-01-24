@@ -42,6 +42,8 @@ export default function Home() {
     <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent to-white/40" />
   </div>
 
+
+
 {/* ================= HEADER ================= */}
 <header className="relative">
   {/* Fine highlight line (subtile) */}
@@ -51,7 +53,7 @@ export default function Home() {
     {/* Top bar */}
     <div className="flex items-center justify-between">
       {/* Logotype */}
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-3">
         
         {/* Texte */}
         <div className="leading-tight">
@@ -65,7 +67,7 @@ export default function Home() {
         </div>
 
         {/* Logo à droite */}
-        <div className="relative h-14 w-14 items-center justify-center">
+        <div className="relative flex h-14 w-14 items-center justify-center">
           {/* Halo doux */}
           <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
@@ -73,7 +75,7 @@ export default function Home() {
           <img
             src="/icon.png"
             alt="GPE Solutions"
-            className="relative h-16 w-16 object-contain items-start justify-center"
+            className="relative h-16 w-16 object-contain"
             draggable={false}
           />
         </div>
@@ -81,7 +83,6 @@ export default function Home() {
 
       <div className="hidden md:block text-xs text-white/55" />
     </div>
-
   </div>
 </header>
 
@@ -92,7 +93,7 @@ export default function Home() {
   <section className="relative z-10 py-6 px-6 bg-transparent">
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
-        <h2 className="mt-20 text-3xl md:text-5xl font-bold text-white/95 mb-10">
+        <h2 className="mt-20 text-3xl md:text-4xl font-bold text-white/95 mb-10">
           Votre service d'externalisation de la paie & DSN        </h2>
       </AnimatedFadeIn>
 
