@@ -55,29 +55,37 @@ export default function Home() {
       {/* Logotype */}
       <div className="flex items-center gap-3">
         
-        {/* Texte */}
+        {/* Texte + logo sur la même ligne */}
         <div className="leading-tight">
-          <div className="text-2xl font-extrabold tracking-tight">
-            <span className="text-blue-300">GPE</span>{" "}
-            <span className="text-white/95">Solutions</span>
+          
+          {/* Ligne marque */}
+          <div className="flex items-center gap-2">
+            <span className="text-2xl font-extrabold tracking-tight text-blue-300">
+              GPE
+            </span>
+
+            <span className="text-2xl font-extrabold tracking-tight text-white/95">
+              Solutions
+            </span>
+
+            {/* Logo juste après "Solutions" */}
+            <div className="relative flex h-10 w-10 items-center justify-center -ml-1">
+              {/* Halo doux */}
+              <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
+
+              <img
+                src="/icon.png"
+                alt="GPE Solutions"
+                className="mt-2 relative h-10 w-10 object-contain"
+                draggable={false}
+              />
+            </div>
           </div>
-          <div className="text-[14px] font-medium text-white/55">
+
+          {/* Sous-titre bien en dessous, sans logo */}
+          <div className="text-[14px] font-medium text-white/55 -mt-2">
             Gestion Paie Externalisée
           </div>
-        </div>
-
-        {/* Logo à droite */}
-        <div className="relative flex h-14 w-14 items-center justify-center">
-          {/* Halo doux */}
-          <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
-
-          {/* Icône */}
-          <img
-            src="/icon.png"
-            alt="GPE Solutions"
-            className="relative h-16 w-16 object-contain"
-            draggable={false}
-          />
         </div>
       </div>
 
@@ -85,6 +93,7 @@ export default function Home() {
     </div>
   </div>
 </header>
+
 
 
 
