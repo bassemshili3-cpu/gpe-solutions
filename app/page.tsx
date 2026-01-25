@@ -405,7 +405,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-600 text-center mb-12">
               Réponse garantie{" "}
-              <span className="font-semibold text-blue-900">sous 24 heures</span>
+              <span className="font-semibold text-blue-900">sous 48 heures</span>
               .
             </p>
           </AnimatedFadeIn>
