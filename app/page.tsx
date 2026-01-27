@@ -102,8 +102,8 @@ export default function Home() {
   <section className="relative z-10 py-6 px-6 bg-transparent">
     <div className="max-w-5xl mx-auto text-center">
       <AnimatedFadeIn>
-        <h2 className="mt-20 text-3xl md:text-4xl font-bold text-white/95 mb-10">
-          Votre service d'externalisation pour une gestion fiable de vos fiches de paie & DSN        </h2>
+        <h2 className="mt-20 text-3xl md:text-3xl font-bold text-white/95 mb-10">
+          Votre service d'externalisation pour une gestion fiable de vos fiches de paie & DSN de votre entreprise      </h2>
       </AnimatedFadeIn>
 
       {/* Center tagline */}
