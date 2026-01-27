@@ -122,7 +122,7 @@ export default function Home() {
             Gestionnaire de paie qualifié
           </h3>
           <p className="mt-2 text-sm text-white/75">
-            prestataire spécialisé en gestion de la paie externalisée.
+            Prestataire spécialisé en gestion de la paie externalisée.
           </p>
         </div>
 
