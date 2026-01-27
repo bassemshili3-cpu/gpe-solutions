@@ -122,7 +122,7 @@ export default function Home() {
             Gestionnaire de paie qualifié
           </h3>
           <p className="mt-2 text-sm text-white/75">
-            Un interlocuteur unique et réactif.
+            prestataire spécialisé en gestion de la paie externalisée.
           </p>
         </div>
 
@@ -157,7 +157,7 @@ export default function Home() {
             Vos coûts de gestion optimisés
           </h3>
           <p className="mt-2 text-sm text-white/75">
-            Tarifs adaptés à votre structure.
+           Vos bulletins de paie à un tarif adapté.
           </p>
         </div>
       </div>
@@ -185,8 +185,8 @@ export default function Home() {
 
       <AnimatedFadeIn>
         <p className="mt-10 text-lg md:text-xl text-white/80 leading-[1.6] max-w-3xl mx-auto text-center">
-          Nous travaillons sur le logiciel{" "}
-          <span className="font-semibold text-white">Sage</span>, une référence dans le milieu de la paie.
+          Afin d'offrir une externalisation de la paie qualitative pour votre entreprise, nous utilisons le logiciel{" "}
+          <span className="font-semibold text-white">Sage</span>, une référence dans le milieu.
         </p>
       </AnimatedFadeIn>
     </div>
@@ -208,9 +208,9 @@ export default function Home() {
             <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl" />
 
             <div className="relative overflow-hidden rounded-[32px] border border-blue-200 bg-white p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)] transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(2,6,23,0.14)]">
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-900">
+              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-900">
                 <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
-                Tarifs transparents
+                Le coût d'une fiche de paie varie selon l'effectif
               </div>
 
               <div className="mt-6">
@@ -296,7 +296,7 @@ export default function Home() {
 
       {/* Ligne principale */}
       <p className="mt-12 text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
-        Pour toute entreprise qui souhaite une paie fiable, maîtrisée, et sans charge mentale.
+        Pour toute entreprise à la recherche d'une solution d’externalisation de la paie fiable, maîtrisée, et sans charge mentale.
       </p>
 
       {/* Pills / badges gradient 2026 */}
