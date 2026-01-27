@@ -210,7 +210,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-[32px] border border-blue-200 bg-white p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)] transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(2,6,23,0.14)]">
               <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-900">
                 <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
-                Le coût d'une fiche de paie varie selon l'effectif
+                Le coût d'un bulletin de paie varie selon l'effectif
               </div>
 
               <div className="mt-6">
