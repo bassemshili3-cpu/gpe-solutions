@@ -185,7 +185,7 @@ export default function Home() {
 
       <AnimatedFadeIn>
         <p className="mt-10 text-lg md:text-xl text-white/80 leading-[1.6] max-w-3xl mx-auto text-center">
-          Afin d'offrir une externalisation de la paie qualitative pour votre entreprise, nous utilisons le logiciel{" "}
+          Afin d'offrir une externalisation qualitative de la paie pour votre entreprise, nous utilisons le logiciel{" "}
           <span className="font-semibold text-white">Sage</span>, une référence dans le milieu.
         </p>
       </AnimatedFadeIn>
@@ -338,7 +338,7 @@ export default function Home() {
    <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
         <h3 className="text-lg font-bold text-gray-900 mb-3">
-          Une expertise dédiée
+          Une gestion de la paie avec une expertise dédiée
         </h3>
         <p className="text-sm text-gray-600 leading-relaxed">
           Un interlocuteur unique, impliqué dans votre dossier, pour une paie
