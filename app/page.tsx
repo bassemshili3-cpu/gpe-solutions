@@ -291,12 +291,12 @@ export default function Home() {
   <div className="max-w-6xl mx-auto">
     <AnimatedFadeIn>
       <h2 className="mt-6 text-3xl md:text-4xl font-bold text-blue-900 text-center">
-        À qui s’adresse GPE Solutions ?
+        Qui peut se tourner vers un prestataire de paie ?
       </h2>
 
       {/* Ligne principale */}
       <p className="mt-12 text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
-        Pour toute entreprise à la recherche d'une solution d’externalisation de la paie fiable, maîtrisée, et sans charge mentale.
+        Toute entreprise à la recherche d'une solution d’externalisation de la paie fiable, maîtrisée, et sans charge mentale.
       </p>
 
       {/* Pills / badges gradient 2026 */}
