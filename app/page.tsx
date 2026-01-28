@@ -69,14 +69,14 @@ export default function Home() {
             </span>
 
             {/* Logo juste après "Solutions" */}
-            <div className="relative flex h-10 w-10 items-center justify-center -ml-1">
+            <div className="relative flex h-10 w-10 items-center justify-center -ml-2">
               {/* Halo doux */}
               <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
               <img
                 src="/icon.png"
                 alt="GPE Solutions"
-                className="mt-2 relative h-10 w-10 object-contain"
+                className="mt-4 relative h-10 w-10 object-contain"
                 draggable={false}
               />
             </div>
