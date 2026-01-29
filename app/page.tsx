@@ -69,7 +69,7 @@ export default function Home() {
             </span>
 
             {/* Logo juste après "Solutions" */}
-            <div className="relative flex h-10 w-10 items-center justify-center -ml-2">
+            <div className="relative flex h-10 w-10 items-center justify-center -ml-1">
               {/* Halo doux */}
               <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
@@ -285,13 +285,12 @@ export default function Home() {
   </section>
 </div>
 
-
-{/* ================= À QUI S’ADRESSE ================= */}
+ {/* ================= À QUI S’ADRESSE ================= */}
 <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/75 to-blue-20">
   <div className="max-w-6xl mx-auto">
     <AnimatedFadeIn>
       <h2 className="mt-6 text-3xl md:text-4xl font-bold text-blue-900 text-center">
-        Qui peut solliciter un prestataire de paie ?
+        Qui peut solliciter GPE comme prestataire de paie ?
       </h2>
 
       {/* Ligne principale */}
@@ -299,43 +298,20 @@ export default function Home() {
         Toute entreprise à la recherche d'une solution d’externalisation de la paie fiable, maîtrisée, et sans charge mentale.
       </p>
 
-      {/* Pills / badges gradient 2026 */}
-      <div className="mt-9 flex flex-wrap justify-center gap-4">
-        {[
-          "TPE & premiers salariés",
-          "PME en croissance",
-          "Dirigeants & RH",
-          "Entreprises exigeantes",
-        ].map((label) => (
-          <div
-            key={label}
-            className="rounded-full border border-blue-100 bg-gradient-to-br from-blue-50 to-white px-5 py-2.5 text-sm font-semibold text-blue-900 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            {label}
-          </div>
-        ))}
-      </div>
     </AnimatedFadeIn>
   </div>
 </section>
 
 <div className="my-18 flex justify-center">
-  <div className="relative h-px w-164">
+  <div className="relative h-px w-164 -mt-10">
     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/20 to-transparent" />
     <div className="absolute -inset-x-8 -inset-y-6 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent blur-2xl" />
   </div>
 </div>
-
-<div className="my-6 flex justify-center">
-  <span className="mt-2 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-8 py-4 text-xl font-semibold text-blue-900 shadow-sm backdrop-blur">
-    Et concrètement, pourquoi GPE ?
-  </span>
-</div>
-
      {/* ================= POURQUOI GPE SOLUTIONS ================= */}
-<section className="relative overflow-hidden bg-gradient-to-b from-blue-20 via-white to-indigo-50">
+<section className="relative overflow-hidden bg-gradient-to-b from-blue-20 via-white to-indigo-50 -mt-20">
   <div className="max-w-6xl mx-auto">
-   <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
         <h3 className="text-lg font-bold text-gray-900 mb-3">
           Une gestion de la paie avec une expertise dédiée
@@ -388,6 +364,7 @@ export default function Home() {
     </AnimatedFadeIn>
   </div>
 </section>
+
 
  {/* ================= ÉTAPES (animation) ================= */}
 
