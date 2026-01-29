@@ -291,7 +291,7 @@ export default function Home() {
   <div className="max-w-6xl mx-auto">
     <AnimatedFadeIn>
       <h2 className="mt-6 text-3xl md:text-4xl font-bold text-blue-900 text-center">
-        Qui peut se tourner vers un prestataire de paie ?
+        Qui peut solliciter un prestataire de paie ?
       </h2>
 
       {/* Ligne principale */}
