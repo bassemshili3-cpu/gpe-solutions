@@ -27,9 +27,10 @@ export default function PolitiqueConfidentialitePage() {
             par :
           </p>
           <ul className="list-disc pl-5">
-            <li>Statut : Salarié porté</li>
-            <li>Société de portage salarial : </li>
-            <li>Adresse de la société de portage : </li>
+           <li>Régime: Micro-entreprise</li>
+           <li>Société: GPE Solutions</li>
+            <li>Adresse du siège social : 27 rue de Plaisance, 42400 Saint-Chamond</li>
+            <li>Numéro SIREN : 884808205 </li>
             <li>Email de contact : contact@gpe-solutions.fr</li>
           </ul>
 
