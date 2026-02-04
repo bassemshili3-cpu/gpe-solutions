@@ -307,13 +307,13 @@ export default function PrixBulletinDePaiePage() {
                 </table>
               </div>
 
-              <p className="mt-10 text-sl text-white/60 leading-relaxed max-w-3xl mx-auto text-center">
+              <p className="mt-10 text-sl text-white/85 leading-relaxed max-w-3xl mx-auto text-center">
                 Ces estimations s’appuient sur les pratiques observées chez les prestataires
                 de paie, cabinets comptables et acteurs du conseil social, ainsi que sur
                 les repères diffusés par des organismes de référence (URSSAF, syndicats
                 professionnels du chiffre)
               </p>
-              <p className="mt-10 text-sl text-white/60 leading-relaxed max-w-3xl mx-auto text-center">
+              <p className="mt-10 text-sl text-white/85 leading-relaxed max-w-3xl mx-auto text-center">
                 À noter que dans la pratique, les tarifications les plus courantes sont celles au
                 bulletin et à la journée.
               </p>
