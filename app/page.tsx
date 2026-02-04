@@ -84,7 +84,7 @@ export default function Home() {
             </span>
 
             {/* Logo juste après "Solutions" */}
-            <div className="relative flex h-10 w-10 items-center justify-center -ml-1">
+            <div className="relative flex h-10 w-10 items-center justify-center">
               {/* Halo doux */}
               <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
 
