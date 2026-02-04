@@ -2,8 +2,10 @@
 import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
+import Head from "next/head";
 
 export default function ExternaliserLaPaiePage() {
+  
   const schema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -19,8 +21,29 @@ export default function ExternaliserLaPaiePage() {
     },
     serviceType: ["Externalisation de la paie", "DSN", "Gestion sociale"],
   };
+  
+ return (
+        <>
+      <Head>
+        {/* Title SEO */}
+        <title>
+          Comment externaliser la paie ? Étapes, conseis & solutions | Tout savoir avec GPE Solutions | Service d'externalisation de la paie pour TPE PME et Grande entreprise
+        </title>
 
-  return (
+        {/* Meta description */}
+        <meta
+          name="description"
+          content="Découvrez comment externaliser la paie : étapes clés, solutions possibles, avantages et conseils pour choisir le bon prestataire."
+        />
+
+        {/* Données structurées */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </Head>
+          
+
     <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
       <ClearHashOnLoad />
 
@@ -70,7 +93,7 @@ export default function ExternaliserLaPaiePage() {
                   </div>
 
                   <div className="text-[14px] font-medium text-white/55 -mt-2">
-                    Externaliser la paie
+                    Gestion Paie Externalisée
                   </div>
                 </div>
               </div>
@@ -454,5 +477,6 @@ export default function ExternaliserLaPaiePage() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

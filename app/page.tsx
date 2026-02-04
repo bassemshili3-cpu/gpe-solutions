@@ -2,8 +2,21 @@ import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import StepsTypingClient from "../components/StepsTypingClient";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
+import Head from "next/head";
 
 export default function Home() {
+  
+  <Head>
+    {/* Title SEO */}
+    <title>
+     Service d'Externalisation de la paie pour une gestion fiable | Adapté TPE & PME | GPE Solutions
+    </title>
+
+    {/* Meta description */}
+    <meta
+      name="description"
+      content="GPE Solutions: Votre service d'externalisation de la paie et DSN pour TPE et PME. Service fiable, conforme et accessible, avec un interlocuteur dédié."
+    />
   <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
@@ -23,8 +36,10 @@ export default function Home() {
     }),
   }}
 />
+</Head>
 
   return (
+    
 
    <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
 <ClearHashOnLoad />

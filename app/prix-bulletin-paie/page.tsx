@@ -1,7 +1,8 @@
-//“Prix d’un bulletin de paie” 
+// “Prix d’un bulletin de paie”
 import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
+import Head from "next/head";
 
 export default function PrixBulletinDePaiePage() {
   const schema = {
@@ -29,309 +30,351 @@ export default function PrixBulletinDePaiePage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
-      <ClearHashOnLoad />
+    <>
+      <Head>
+        <title>
+          Bulletin de paie : tout savoir sur les prix | GPE Solutions
+        </title>
 
-      {/* JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+        <meta
+          name="description"
+          content="Prix d’un bulletin de paie : comprendre les modes de tarification, les facteurs qui font varier le coût, et obtenir un ordre d’idée grâce à notre grille tarifaire. Externalisation de la paie & DSN."
+        />
 
-      {/* WRAPPER */}
-      <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/85 to-blue-50">
-        {/* Mesh / aurora global */}
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-500/12 blur-3xl" />
-          <div className="absolute -top-32 right-0 translate-x-24 h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl" />
-          <div className="absolute top-24 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-violet-500/8 blur-3xl" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.10),transparent_60%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(99,102,241,0.10),transparent_55%)]" />
-          <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent to-white/40" />
-        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </Head>
 
-        {/* HEADEER*/}
-        <header className="relative">
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+      <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
+        <ClearHashOnLoad />
 
-          <div className="relative z-10 w-full px-3 pt-3 pb-0">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="leading-tight">
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl font-extrabold tracking-tight text-blue-300">
-                      GPE
-                    </span>
-                    <span className="text-2xl font-extrabold tracking-tight text-white/95">
-                      Solutions
-                    </span>
+        {/* WRAPPER */}
+        <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/90 to-white">
+          {/* Mesh / aurora global */}
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-500/12 blur-3xl" />
+            <div className="absolute -top-32 right-0 translate-x-24 h-[520px] w-[520px] rounded-full bg-indigo-500/10 blur-3xl" />
+            <div className="absolute top-24 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-violet-500/8 blur-3xl" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.10),transparent_60%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(99,102,241,0.10),transparent_55%)]" />
+          </div>
 
-                    <div className="relative flex h-10 w-10 items-center justify-center -ml-1">
-                      <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
-                      <img
-                        src="/icon.png"
-                        alt="GPE Solutions"
-                        className="mt-4 relative h-10 w-10 object-contain"
-                        draggable={false}
-                      />
+          {/* HEADER */}
+          <header className="relative">
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+
+            <div className="relative z-10 w-full px-3 pt-3 pb-0">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="leading-tight">
+                    <div className="flex items-center gap-2">
+                      <span className="text-2xl font-extrabold tracking-tight text-blue-300">
+                        GPE
+                      </span>
+                      <span className="text-2xl font-extrabold tracking-tight text-white/95">
+                        Solutions
+                      </span>
+
+                      <div className="relative flex h-10 w-10 items-center justify-center -ml-1">
+                        <div className="pointer-events-none absolute -inset-3 rounded-2xl bg-gradient-to-br from-blue-500/20 via-indigo-500/15 to-violet-500/20 blur-2xl" />
+                        <img
+                          src="/icon.png"
+                          alt="GPE Solutions"
+                          className="mt-4 relative h-10 w-10 object-contain"
+                          draggable={false}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="text-[14px] font-medium text-white/55 -mt-2">
+                      Gestion Paie Externalisée
                     </div>
                   </div>
-
-                  <div className="text-[14px] font-medium text-white/55 -mt-2">
-                    Prix d’un bulletin de paie
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </header>
+          </header>
 
-        {/* HERO */}
-        <section className="relative z-10 py-10 px-6 bg-transparent">
-          <div className="max-w-5xl mx-auto text-center">
-            <AnimatedFadeIn>
-              <h1 className="mt-16 text-3xl md:text-4xl font-bold text-white/95">
-                Prix d’un bulletin de paie : combien ça coûte, et pourquoi ça varie autant ?
-              </h1>
-            </AnimatedFadeIn>
+          {/* HERO */}
+          <section className="relative z-10 py-10 px-6 bg-transparent">
+            <div className="relative max-w-5xl mx-auto text-center">
+              {/* === SYMBOLS € DECORATIFS (BLANCS) === */}
+              <div className="pointer-events-none absolute inset-0 mix-blend-screen">
+                <span className="absolute top-10 left-8 text-white opacity-60 text-3xl rotate-[-12deg] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
+                  €
+                </span>
 
-            <div className="mt-8 text-center">
-              <div className="mx-auto mt-6 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            </div>
+                <span className="absolute top-24 right-12 text-white opacity-70 text-5xl rotate-[8deg] drop-shadow-[0_0_16px_rgba(255,255,255,0.40)]">
+                  €
+                </span>
 
-            <AnimatedFadeIn>
-              <p className="mt-8 text-lg md:text-xl text-white/80 leading-[1.7] max-w-3xl mx-auto">
-                Le prix d’un bulletin de paie dépend de la méthode de tarification du prestataire,
-                du niveau de complexité (convention, variables, multi-contrats, absences, IJSS…),
-                et des services inclus (DSN, entrées/sorties, support). Ici, on te donne une vue
-                claire et un ordre d’idée.
-              </p>
-            </AnimatedFadeIn>
+                <span className="absolute top-1/2 right-6 text-white opacity-60 text-3xl rotate-[-18deg] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
+                  €
+                </span>
 
-            {/* CTA row */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#tarifs"
-                className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-blue-900 via-indigo-700 to-indigo-400 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
-              >
-                Voir un ordre d’idée
-                <span className="transition group-hover:translate-x-0,5">→</span>
-              </a>
+                {/* ⚠️ top-66 n’existe pas en Tailwind → top-64 ou valeur arbitraire */}
+                <span className="absolute top-64 left-10 text-white opacity-60 text-3xl rotate-[-14deg] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
+                  €
+                </span>
+              </div>
+              {/* === FIN SYMBOLS === */}
 
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-10 py-4 text-base font-semibold text-white/90 shadow-sm backdrop-blur transition hover:border-white/30 hover:bg-white/10"
-              >
-                Demander un devis personnalisé
-              </a>
-            </div>
+              <AnimatedFadeIn>
+                <h1 className="mt-4 text-3xl md:text-4xl font-bold text-white/95 relative">
+                  Prix d’un bulletin de paie : combien ça coûte, et pourquoi ça varie autant ?
+                </h1>
+              </AnimatedFadeIn>
 
-            {/* 3 cards */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Tarification simple",
-                  desc: "Au bulletin, ou au forfait : l’objectif est d’être lisible et prévisible.",
-                  icon: (
-                    <path d="M9 7h6M9 11h6M9 15h4M6 17V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12" />
-                  ),
-                },
-                {
-                  title: "Coût lié à la complexité",
-                  desc: "Plus il y a d’événements, plus le bulletin demande du contrôle.",
-                  icon: <path d="M3 17l6-6 4 4 7-7" />,
-                },
-                {
-                  title: "Services inclus",
-                  desc: "DSN, entrées/sorties, support : le prix reflète l’étendue du service.",
-                  icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />,
-                },
-              ].map((card) => (
-                <div
-                  key={card.title}
-                  className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20"
-                >
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    >
-                      {card.icon}
-                    </svg>
+              <div className="mt-8 text-center">
+                <div className="mx-auto mt-6 h-px w-56 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+              </div>
+
+              <AnimatedFadeIn>
+                <p className="mt-12 text-lg md:text-xl text-white/80 leading-[1.7] max-w-3xl mx-auto relative">
+                  Le prix d’un bulletin de paie dépend de la méthode de tarification du prestataire,
+                  du niveau de complexité (convention, variables, multi-contrats, absences, IJSS…),
+                  et des services inclus (DSN, entrées/sorties, support). Ici, on vous donne une vue
+                  claire ainsi qu&apos;un ordre d’idée.
+                </p>
+              </AnimatedFadeIn>
+
+            <div className="relative z-10 mt-20 mb-10 text-center">
+  <p className="text-white/70 text-base md:text-lg italic">
+    Concrètement, le prix d’un bulletin de paie repose sur trois leviers clés:
+  </p>
+
+  <div className="mx-auto mt-4 h-px w-40 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+</div>
+
+
+              {/* 3 cards */}
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  {
+                    title: "La méthode de tarification",
+                    desc: "Au bulletin, à l'heure, à la journée ou au forfait : l’objectif est d’être toujours lisible et prévisible.",
+                    icon: (
+                      <path d="M9 7h6M9 11h6M9 15h4M6 17V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12" />
+                    ),
+                  },
+                  {
+                    title: "La complexité du dossier",
+                    desc: "Plus il y a d’événements, plus le bulletin demande du contrôle.",
+                    icon: <path d="M3 17l6-6 4 4 7-7" />,
+                  },
+                  {
+                    title: "Les services inclus",
+                    desc: "Logiciel utilisé, entrées/sorties, support ? le prix reflète l’étendue du service.",
+                    icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />,
+                  },
+                ].map((card) => (
+                  <div
+                    key={card.title}
+                    className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20"
+                  >
+                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="h-6 w-6"
+                        aria-hidden="true"
+                      >
+                        {card.icon}
+                      </svg>
+                    </div>
+                    <h2 className="mt-6 text-lg font-semibold text-white/95">
+                      {card.title}
+                    </h2>
+                    <p className="mt-2 text-sm text-white/75">{card.desc}</p>
                   </div>
-                  <h2 className="mt-6 text-lg font-semibold text-white/95">
-                    {card.title}
-                  </h2>
-                  <p className="mt-2 text-sm text-white/75">{card.desc}</p>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
 
-            <div className="mt-10 flex justify-center">
-              <a
-                href="#contact"
-                className="text-sm font-semibold text-white/85 underline underline-offset-4 hover:text-white"
-              >
-                Chez GPE Solutions, on répond sous 48h
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* LINE */}
-        <div className="mt-8 flex justify-center">
-          <div className="relative h-px w-72">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-            <div className="absolute -inset-x-8 -inset-y-6 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent blur-2xl" />
-          </div>
-        </div>
-
-        {/*SECTION: méthodes de tarification*/}
-        <section className="relative z-10 pt-10 pb-16 px-6 bg-transparent">
-          <div className="max-w-6xl mx-auto">
-            <AnimatedFadeIn>
-              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                Quelles sont les façons de tarifer un bulletin de paie ?
-              </h2>
-              <p className="mt-6 text-white/75 text-center max-w-3xl mx-auto leading-relaxed">
-                Le prix d’un bulletin de paie dépend surtout du modèle économique : certains
-                prestataires facturent “au bulletin”, d’autres proposent un forfait mensuel, ou
-                un mix avec des options. L’important : savoir ce qui est inclus.
-              </p>
-            </AnimatedFadeIn>
-
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  title: "Tarif au bulletin",
-                  desc: "Simple et lisible : un prix par bulletin produit. Souvent adapté aux TPE/PME.",
-                },
-                {
-                  title: "Forfait mensuel",
-                  desc: "Un budget stable : intéressant si tu as un volume régulier et des besoins récurrents.",
-                },
-                {
-                  title: "Au bulletin + options",
-                  desc: "Bulletins + prestations ponctuelles (entrées/sorties, attestations, régularisations).",
-                },
-                {
-                  title: "Sur-mesure",
-                  desc: "Cas complexes : multi-sites, conventions spécifiques, volumes élevés, particularités métier.",
-                },
-              ].map((card) => (
-                <div
-                  key={card.title}
-                  className="rounded-3xl border border-blue-300/30 bg-blue-950/50 p-8 shadow-xl backdrop-blur-lg"
-                
-
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="#contact"
+                  className="text-sm font-semibold text-white/85 underline underline-offset-4 hover:text-white"
                 >
-                  <h3 className="text-lg font-bold text-white/95">{card.title}</h3>
-                  <p className="mt-3 text-sm text-white/85 leading-relaxed">
-                    {card.desc}
-                  </p>
-                </div>
-              ))}
+                  Chez GPE Solutions, on répond sous 48h
+                </a>
+              </div>
             </div>
+          </section>
 
-            <div className="mt-10 flex justify-center">
-              <a
-                href="#tarifs"
-                className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-8 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
-              >
-                Voir la grille GPE Solutions
-                <span className="transition group-hover:translate-x-0,5">→</span>
-              </a>
+          {/* LINE */}
+          <div className="flex justify-center">
+            <div className="relative h-px w-72">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+              <div className="absolute -inset-x-8 -inset-y-6 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent blur-2xl" />
             </div>
           </div>
-        </section>
+
+         {/* ================= COÛT MOYEN D’UNE FICHE DE PAIE ================= */}
+<section className="relative z-10 py-24 px-6 bg-transparent">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="-mt-20 text-3xl md:text-4xl font-bold text-white text-center">
+      En moyenne, une fiche de paie coûte :
+    </h2>
+
+    <p className="mt-8 text-lg text-white/80 leading-relaxed text-center max-w-3xl mx-auto">
+      Le coût d’un bulletin de paie dépend du niveau de complexité du dossier,
+      du mode de facturation choisi et des prestations incluses. Les montants
+      ci-dessous correspondent à des{" "}
+      <span className="font-medium text-white">
+        ordres de grandeur constatés sur le marché
+      </span>
+      , selon les pratiques des prestataires de paie et cabinets spécialisés.
+    </p>
+
+    {/* TABLE */}
+    <div className="mt-14 overflow-x-auto">
+      <table className="w-full border-collapse border-2 border-white/40 bg-transparent">
+        <thead>
+          <tr className="border-b-2 border-white/30">
+            <th className="px-6 py-4 text-left text-[12px] uppercase tracking-wide font-semibold text-white/90 border-r border-white/30">
+              Mode de tarification
+            </th>
+            <th className="px-6 py-4 text-left text-[12px] uppercase tracking-wide font-semibold text-white/90 border-r border-white/30">
+              Coût moyen observé
+            </th>
+            <th className="px-6 py-4 text-left text-[12px] uppercase tracking-wide font-semibold text-white/90">
+              À quoi cela correspond
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr className="border-b border-white/15">
+            <td className="px-6 py-4 font-medium text-white border-r border-white/20">
+              Tarif au bulletin (dossier simple)
+            </td>
+            <td className="px-6 py-4 text-white/90 border-r border-white/20">
+              20 € à 35 € / bulletin
+            </td>
+            <td className="px-6 py-4 text-white/70 text-sm">
+              Bulletin standard, peu de variables, convention simple.
+            </td>
+          </tr>
+
+          <tr className="border-b border-white/15 bg-white/[0.03]">
+            <td className="px-6 py-4 font-medium text-white border-r border-white/20">
+              Tarif au bulletin (dossier complexe)
+            </td>
+            <td className="px-6 py-4 text-white/90 border-r border-white/20">
+              35 € à 60 € / bulletin
+            </td>
+            <td className="px-6 py-4 text-white/70 text-sm">
+              Variables multiples, absences complexes, IJSS, régularisations,
+              conventions spécifiques.
+            </td>
+          </tr>
+
+          <tr className="border-b border-white/15">
+            <td className="px-6 py-4 font-medium text-white border-r border-white/20">
+              Facturation horaire
+            </td>
+            <td className="px-6 py-4 text-white/90 border-r border-white/20">
+              60 € à 100 € / heure
+            </td>
+            <td className="px-6 py-4 text-white/70 text-sm">
+              Interventions ponctuelles, conseil social, corrections ou reprises
+              de dossiers.
+            </td>
+          </tr>
+
+          <tr className="bg-white/[0.03]">
+            <td className="px-6 py-4 font-medium text-white border-r border-white/20">
+              Facturation à la journée
+            </td>
+            <td className="px-6 py-4 text-white/90 border-r border-white/20">
+              400 € à 800 € / jour
+            </td>
+            <td className="px-6 py-4 text-white/70 text-sm">
+              Missions spécifiques : audit paie, structuration, reprise complète
+              ou accompagnement projet.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p className="mt-10 text-sm text-white/60 leading-relaxed max-w-3xl mx-auto text-center">
+      Ces estimations s’appuient sur les pratiques observées chez les prestataires
+      de paie, cabinets comptables et acteurs du conseil social, ainsi que sur
+      les repères diffusés par des organismes de référence (URSSAF, syndicats
+      professionnels du chiffre).
+    </p>
+     <p className="mt-20 text-white/85 text-lg leading-relaxed">
+        Maintenant que vous avez un repère du marché,
+        voici notre approche chez <span className="font-semibold text-white">GPE Solutions</span> :
+        une paie avec un logiciel reconnu et
+        avec une tarification <span className="font-semibold text-white">simple</span> et
+        <span className="font-semibold text-white"> accessible</span>
+      </p>
+  </div>
+</section>
+{/* ================= TRANSITION VERS LA GRILLE (PUNCHY) ================= */}
+<section className="relative z-10 px-6 pb-10">
+  <div className="max-w-5xl mx-auto">
+    <div className="-mt-10 border-l-2 border-white/30 pl-6">
+      <div className="text-xs uppercase tracking-widest text-white/60">
+        Notre différence
       </div>
 
-      {/* SECTION: facteurs qui font varier le prix */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/75 to-blue-20">
-        <div className="max-w-6xl mx-auto px-6 py-16">
-          <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              Quels facteurs impactent le prix d’un bulletin de paie ?
-            </h2>
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
-              Deux entreprises avec le même effectif peuvent avoir un coût très différent. Le prix
-              reflète le temps de traitement, le niveau de contrôle, la complexité, et les outils
-              utilisés.
-            </p>
-          </AnimatedFadeIn>
+      <p className="mt-4 text-white text-xl md:text-2xl font-semibold leading-snug">
+        Sage + tarif simple = une paie premium et sans surprise
+      </p>
+      {/* Logo Sage (iconic) */}
+      <div className="mt-8 flex flex-col items-center text-center">
+        <div className="relative">
+          <div className="pointer-events-none absolute -inset-6 rounded-none bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl animate-pulse" />
+          <div className="absolute -inset-[4px] rounded-none bg-gradient-to-br from-blue-900 via-white to-violet-900 opacity-70 blur-[0.5px]" />
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Complexité des bulletins",
-                bullets: [
-                  "primes variables / commissions",
-                  "absences, IJSS, subrogation",
-                  "heures supplémentaires, majorations",
-                  "multi-contrats / temps partiel",
-                ],
-              },
-              {
-                title: "Convention collective / spécificités",
-                bullets: [
-                  "règles particulières (prévoyance, maintien de salaire)",
-                  "accords d’entreprise",
-                  "pratiques de paie propres au secteur",
-                ],
-              },
-              {
-                title: "Volume & organisation",
-                bullets: [
-                  "effectif + stabilité",
-                  "flux entrées/sorties",
-                  "qualité des variables transmises",
-                ],
-              },
-              {
-                title: "Logiciel et process",
-                bullets: [
-                  "outils (ex. Sage) + paramétrage",
-                  "contrôles internes",
-                  "suivi DSN / retours",
-                ],
-              },
-            ].map((b) => (
-              <div key={b.title} className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">{b.title}</h3>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  {b.bullets.map((t) => (
-                    <li key={t} className="flex items-start gap-3">
-                      <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-blue-700">
-                        ✓
-                      </span>
-                      {t}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="group relative flex h-20 w-38 items-center justify-center rounded-none">
+            <div className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute -left-10 top-1/2 h-14 w-14 -translate-y-1/2 rotate-12 bg-white/30 blur-xl" />
+            </div>
+
+            <img
+              src="/Sage_logo.png"
+              alt="Sage"
+              className="h-50 w-38 w-auto object-contain"
+              draggable={false}
+            />
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* SECTION: grille tarifaire */}
-      <section id="tarifs" className="relative overflow-hidden bg-gradient-to-b from-blue-20 via-white to-indigo-50">
+      <p className="mt-8 text-white/80 leading-relaxed">
+        Chez GPE Solutions, nous travaillons sur <span className="font-semibold text-white">Sage </span>
+         et nous avons opté pour une tarification volontairement lisible
+        le prix varie donc uniquement selon l’effectif. Pas de “options” cachées et pas de mauvaise surprise !
+      </p>
+    </div>
+  </div>
+</section>
+
+          
+
+        {/* SECTION: grille tarifaire */}
+
         <div className="max-w-6xl mx-auto px-6 py-16">
           <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              Grille tarifaire GPE Solutions : un ordre d’idée
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+              Notre Grille tarifaire Chez <br></br>
+                <span className="text-4xl font-extrabold tracking-tight text-blue-300">
+                         GPE
+                      </span> {" "}
+
+                      <span className="text-4xl font-extrabold tracking-tight text-white/95"> 
+                        Solutions
+                      </span>
             </h2>
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
-              Pour donner un repère, voici une grille indicative basée sur l’effectif. Chez{" "}
-              <span className="font-semibold text-blue-900">GPE Solutions</span>, on privilégie une
-              tarification lisible, et on ajuste selon la réalité de tes bulletins (complexité,
-              volume, conventions, besoins).
-            </p>
           </AnimatedFadeIn>
 
           <div className="mt-12 flex justify-center">
@@ -342,7 +385,7 @@ export default function PrixBulletinDePaiePage() {
                 <div className="relative overflow-hidden rounded-[32px] border border-blue-200 bg-white p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)] transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(2,6,23,0.14)]">
                   <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-900">
                     <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
-                    Tarif / bulletin (ordre d’idée)
+                    Tarif / bulletin 
                   </div>
 
                   <div className="mt-6">
@@ -412,67 +455,18 @@ export default function PrixBulletinDePaiePage() {
             </AnimatedFadeIn>
           </div>
         </div>
-      </section>
-
-      {/* SECTION: FAQ */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedFadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center">
-              Questions fréquentes sur le prix d’un bulletin de paie
-            </h2>
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
-              Les réponses ci-dessous t’aident à comparer les offres d’externalisation et à comprendre
-              ce que recouvre réellement un “prix par bulletin”.
-            </p>
-          </AnimatedFadeIn>
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                q: "Pourquoi le prix d’un bulletin de paie varie autant ?",
-                a: "Parce que tous les bulletins n’ont pas la même complexité : variables, absences, IJSS, conventions, entrées/sorties… Le prix reflète le temps, le contrôle et les services inclus (DSN, support).",
-              },
-              {
-                q: "Le prix inclut-il toujours la DSN ?",
-                a: "Pas forcément. Certains prestataires facturent la DSN séparément ou en option. Chez GPE Solutions, la DSN fait partie du service, avec un process cadré.",
-              },
-              {
-                q: "Forfait ou tarif au bulletin : lequel est le meilleur ?",
-                a: "Ça dépend : au bulletin = très lisible ; forfait = budget stable si volume régulier. L’essentiel est de clarifier les options et les cas “hors cadre”.",
-              },
-              {
-                q: "Quels éléments augmenteront le coût ?",
-                a: "Les absences/IJSS, les primes variables, les changements fréquents, les conventions spécifiques, et un flux élevé d’entrées/sorties. Un bon process réduit ces surcoûts.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.q}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.a}</p>
-              </div>
-            ))}
-          </div>
+        
+      
+         {/* ✅ IMPORTANT : on ferme le wrapper ICI, après la section coûts moyens */}
         </div>
-      </section>
+        
 
-      {/* CONTACT */}
-      <section id="contact" className="py-10 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <AnimatedFadeIn>
-            <h2 className="text-4xl font-bold text-blue-900 mb-2 text-center">
-              Formulaire de contact
-            </h2>
-            <p className="text-gray-600 text-center mb-12">
-              Réponse garantie{" "}
-              <span className="font-semibold text-blue-900">sous 48 heures</span>.
-            </p>
-          </AnimatedFadeIn>
+   {/* SECTION: FAQ */} <section className="py-20 px-6 bg-white"> {/* HEADER FAQ */} <div className="max-w-5xl mx-auto"> <AnimatedFadeIn> <div className="text-center"> {/* Sur-titre */} {/* Titre modernisé */} <h2 className="mt-6 inline-block rounded-full bg-blue-900 px-8 py-3 text-2xl md:text-3xl font-bold tracking-wide text-white shadow-sm">
+  FAQ
+</h2>
+ </div> </AnimatedFadeIn> <div className="mt-14 border-t border-blue-900/10"> {[ { q: "Pourquoi le prix d’un bulletin de paie varie autant ?", a: "Parce que tous les bulletins n’ont pas la même complexité : variables, absences, IJSS, conventions, entrées/sorties… Le prix reflète le temps de traitement, le niveau de contrôle et les services inclus (DSN, support).", }, { q: "Le prix inclut-il toujours la DSN ?", a: "Pas forcément. Certains prestataires facturent la DSN séparément ou en option. Chez GPE Solutions, la DSN fait partie du service, avec un process cadré.", }, { q: "Forfait ou tarif au bulletin : lequel est le meilleur ?", a: "Ça dépend : au bulletin = lisible ; forfait = budget stable si le volume est régulier. L’essentiel est de clarifier ce qui est inclus et les cas “hors cadre”.", }, { q: "Quels éléments augmentent le coût d’un bulletin ?", a: "Les absences/IJSS, les primes variables, les changements fréquents, les conventions spécifiques, et un flux élevé d’entrées/sorties. Un bon process réduit ces surcoûts.", }, ].map((item) => ( <details key={item.q} className="group border-b border-blue-900/10 py-6" > <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-left"> <span className="text-lg font-semibold text-blue-950"> {item.q} </span> <span className="flex h-9 w-9 items-center justify-center border border-blue-900/15 bg-white text-blue-950 transition group-hover:border-blue-900/25"> <span className="text-xl leading-none select-none group-open:hidden"> + </span> <span className="text-xl leading-none select-none hidden group-open:block"> − </span> </span> </summary> <div className="mt-4 pr-2 md:pr-10"> <p className="text-gray-600 leading-relaxed"> {item.a} </p> </div> </details> ))} </div> </div> </section>
 
-          <AnimatedFadeIn>
-            <ContactForm />
-          </AnimatedFadeIn>
-        </div>
-      </section>
+
 
       {/* FOOTER */}
       <footer className="py-10 px-6 border-t border-blue-100 bg-white">
@@ -495,7 +489,12 @@ export default function PrixBulletinDePaiePage() {
             </a>
           </div>
         </div>
+        
       </footer>
     </main>
+    </>
   );
 }
+
+
+  

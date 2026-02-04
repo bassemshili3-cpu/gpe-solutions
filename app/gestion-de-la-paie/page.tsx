@@ -2,6 +2,7 @@
 import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
+import Head from "next/head";
 
 export default function GestionDeLaPaiePage() {
   const schema = {
@@ -21,6 +22,26 @@ export default function GestionDeLaPaiePage() {
   };
 
   return (
+        <>
+      <Head>
+        {/* Title SEO */}
+        <title>
+          Le guide complet pour tout savoir sur la gestion de la paie | GPE Solutions | Service d'externalisation de la paie pour toute entreprise | TPE PME Grand groupe
+        </title>
+
+        {/* Meta description */}
+        <meta
+          name="description"
+          content="Gestion de la paie : comprendre les étapes, les obligations, la DSN et les bonnes pratiques avec GPE Solutions: Votre Prestataire spécialisé en gestion de la paie et paie externalisée."
+        />
+
+        {/* Données structurées */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </Head>
+
     <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
       <ClearHashOnLoad />
 
@@ -70,7 +91,7 @@ export default function GestionDeLaPaiePage() {
                   </div>
 
                   <div className="text-[14px] font-medium text-white/55 -mt-2">
-                    Gestion de la paie
+                    Gestion Paie Externalisée
                   </div>
                 </div>
               </div>
@@ -402,5 +423,6 @@ export default function GestionDeLaPaiePage() {
         </div>
       </footer>
     </main>
+    </>
   );
 }
