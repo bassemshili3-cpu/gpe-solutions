@@ -45,7 +45,7 @@ export default function PrixBulletinDePaiePage() {
         />
       </Head>
 
-      <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
+      <main className="min-h-screen bg-blue-950 text-gray-800 overflow-x-hidden">
         <ClearHashOnLoad />
 
         {/* WRAPPER */}
