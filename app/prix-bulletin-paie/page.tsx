@@ -45,16 +45,16 @@ export default function PrixBulletinDePaiePage() {
         />
       </Head>
 
-      <main className="min-h-screen bg-blue-950 text-gray-800 overflow-x-hidden">
+      <main className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
         <ClearHashOnLoad />
 
         {/* WRAPPER */}
+       
         <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/90 to-white">
-  {/* Top fade iOS (anti-barre blanche) */}
-  <div className="pointer-events-none absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-blue-950 to-transparent" />
-  </div>
+        
+         {/* Fondu haut iOS */}
+  <div className="pointer-events-none absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-blue-950 via-blue-950/80 to-transparent z-20" />
 
-        <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/90 to-white">
           {/* Mesh / aurora global */}
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-500/12 blur-3xl" />
