@@ -110,7 +110,7 @@ export default function PrixBulletinDePaiePage() {
   </span>
 
   <span
-    className="hidden sm:block absolute top-40 right-20 text-white/10 text-3xl
+    className="hidden sm:block absolute top-45 right-10 text-white/10 text-3xl
     motion-safe:animate-[floatMicro_15s_ease-in-out_infinite]"
     style={{ animationDelay: "1.5s" }}
   >
@@ -228,16 +228,6 @@ export default function PrixBulletinDePaiePage() {
               <h2 className="-mt-20 text-3xl md:text-4xl font-bold text-white text-center">
                 En moyenne, une fiche de paie coûte :
               </h2>
-
-              <p className="mt-8 text-lg text-white/80 leading-relaxed text-center max-w-3xl mx-auto">
-                Le coût d’un bulletin de paie dépend du niveau de complexité du dossier,
-                du mode de facturation choisi et des prestations incluses. Les montants
-                ci-dessous correspondent à des{" "}
-                <span className="font-medium text-white">
-                  ordres de grandeur constatés sur le marché
-                </span>
-                , selon les pratiques des prestataires de paie et cabinets spécialisés.
-              </p>
 
               {/* TABLE */}
               <div className="mt-14 overflow-x-auto">
