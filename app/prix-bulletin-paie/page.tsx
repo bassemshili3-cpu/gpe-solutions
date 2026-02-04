@@ -49,11 +49,11 @@ export default function PrixBulletinDePaiePage() {
         <ClearHashOnLoad />
 
         {/* WRAPPER */}
-       
+       <div className="relative pt-16 bg-blue-950">
+  <div className="absolute top-0 left-0 right-0 h-16 bg-blue-950" />
         <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/90 to-white">
-        
-         {/* Fondu haut iOS */}
-  <div className="pointer-events-none absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-blue-950 via-blue-950/80 to-transparent z-20" />
+
+       
 
           {/* Mesh / aurora global */}
           <div className="pointer-events-none absolute inset-0">
@@ -97,8 +97,10 @@ export default function PrixBulletinDePaiePage() {
                   </div>
                 </div>
               </div>
+              
             </div>
           </header>
+          </div>
 
           {/* HERO */}
           <section className="relative z-10 py-10 px-6 bg-transparent">
