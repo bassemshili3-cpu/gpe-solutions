@@ -98,25 +98,36 @@ export default function PrixBulletinDePaiePage() {
           {/* HERO */}
           <section className="relative z-10 py-10 px-6 bg-transparent">
             <div className="relative max-w-5xl mx-auto text-center">
-              {/* === SYMBOLS € DECORATIFS (BLANCS) === */}
-              <div className="pointer-events-none absolute inset-0 mix-blend-screen">
-                <span className="absolute top-10 left-8 text-white opacity-60 text-3xl rotate-[-12deg] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
-                  €
-                </span>
+              {/* === SYMBOLS € DISCRETS (SEO-FRIENDLY) === */}
+<div className="pointer-events-none absolute inset-0">
+  
+  {/* Desktop only */}
+  <span
+    className="hidden sm:block absolute top-16 left-12 text-white/10 text-2xl
+    motion-safe:animate-[floatMicro_12s_ease-in-out_infinite]"
+  >
+    €
+  </span>
 
-                <span className="absolute top-24 right-12 text-white opacity-70 text-5xl rotate-[8deg] drop-shadow-[0_0_16px_rgba(255,255,255,0.40)]">
-                  €
-                </span>
+  <span
+    className="hidden sm:block absolute top-40 right-20 text-white/10 text-3xl
+    motion-safe:animate-[floatMicro_15s_ease-in-out_infinite]"
+    style={{ animationDelay: "1.5s" }}
+  >
+    €
+  </span>
 
-                <span className="absolute top-1/2 right-6 text-white opacity-60 text-3xl rotate-[-18deg] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
-                  €
-                </span>
+  {/* Mobile only – 1 symbole max */}
+  <span
+    className="sm:hidden absolute top-10 left-1/2 -translate-x-1/2 text-white/10 text-xl
+    motion-safe:animate-[floatMicro_14s_ease-in-out_infinite]"
+  >
+    €
+  </span>
 
-                {/* ⚠️ top-66 n’existe pas en Tailwind → top-64 ou valeur arbitraire */}
-                <span className="absolute top-64 left-10 text-white opacity-60 text-3xl rotate-[-14deg] drop-shadow-[0_0_12px_rgba(255,255,255,0.35)]">
-                  €
-                </span>
-              </div>
+</div>
+{/* === FIN SYMBOLS === */}
+
               {/* === FIN SYMBOLS === */}
 
               <AnimatedFadeIn>
