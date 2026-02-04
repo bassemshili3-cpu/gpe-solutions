@@ -49,8 +49,7 @@ export default function PrixBulletinDePaiePage() {
         <ClearHashOnLoad />
 
         {/* WRAPPER */}
-       <div className="relative pt-16 bg-blue-950">
-  <div className="absolute top-0 left-0 right-0 h-16 bg-blue-950" />
+       
         <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/90 to-white">
 
        
@@ -100,7 +99,7 @@ export default function PrixBulletinDePaiePage() {
               
             </div>
           </header>
-          </div>
+          
 
           {/* HERO */}
           <section className="relative z-10 py-10 px-6 bg-transparent">
