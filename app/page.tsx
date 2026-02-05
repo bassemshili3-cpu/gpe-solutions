@@ -298,24 +298,24 @@ export default function Home() {
           </a>
         </div>
   </section>
-</div>
+
 
  {/* ================= À QUI S’ADRESSE ================= */}
-<section className="relative overflow-hidden bg-gradient-to-b from-blue-50/75 to-blue-20">
+
   <div className="max-w-6xl mx-auto">
     <AnimatedFadeIn>
-      <h2 className="mt-6 text-3xl md:text-4xl font-bold text-blue-900 text-center">
+      <h2 className="mt-6 text-3xl md:text-4xl font-bold text-white text-center">
         Qui peut solliciter GPE comme prestataire de paie ?
       </h2>
 
       {/* Ligne principale */}
-      <p className="mt-12 text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+      <p className="mt-12 text-lg md:text-xl text-white leading-relaxed max-w-4xl mx-auto text-center">
         Toute entreprise à la recherche d'une solution d’externalisation de la paie fiable, maîtrisée, et sans charge mentale.
       </p>
 
     </AnimatedFadeIn>
   </div>
-</section>
+
 
 <div className="my-18 flex justify-center">
   <div className="relative h-px w-164 -mt-10">
@@ -324,51 +324,51 @@ export default function Home() {
   </div>
 </div>
      {/* ================= POURQUOI GPE SOLUTIONS ================= */}
-<section className="relative overflow-hidden bg-gradient-to-b from-blue-20 via-white to-indigo-50 -mt-20">
-  <div className="max-w-6xl mx-auto">
+
+  <div className="-mt-10 max-w-6xl mx-auto">
    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/60 mb-3">
           Une gestion de la paie avec une expertise dédiée
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed">
+        <p className="text-sm text-gray-900/70 leading-relaxed">
           Un interlocuteur unique, impliqué dans votre dossier, pour une paie
           claire et bien suivie.
         </p>
       </div>
 
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/60 mb-3">
           Une confidentialité totale
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed">
+        <p className="text-sm text-gray-900/70 leading-relaxed">
           Conscients de l'importance de la confidentalité en paie, nous traitons cette dernière en toute discrétion.
         </p>
       </div>
 
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/80 mb-3">
           Des process fiables
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed">
+        <p className="text-sm text-gray-900 leading-relaxed">
           Variables → bulletins → DSN : chaque étape est contrôlée pour limiter
           les erreurs et rester conforme.
         </p>
       </div>
 
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/80 mb-3">
           Une relation transparente
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed">
+        <p className="text-sm text-gray-900 leading-relaxed">
           Vous savez où on en est, ce qui est fait, et quand. Réponse rapide en
           cas de question.
         </p>
       </div>
     </div>
   </div>
-</section>
 
+</div>
 
  {/* ================= ÉTAPES (animation) ================= */}
 

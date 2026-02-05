@@ -102,10 +102,10 @@ export default function StepsTypingClient() {
     return () => clearInterval(t);
   }, [activeIndex]);
  return (
-    <section ref={sectionRef} className="py-20 px-6 bg-gradient-to-b from-indigo-50 via-white to-white">
+    <section ref={sectionRef} className="py-20 px-6 bg-gradient-to-b from-blue-50/50 via-white to-white">
       <div className="max-w-6x1 mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900/70">
             Les étapes pour externaliser votre paie
           </h2>
         </div>
@@ -136,7 +136,7 @@ export default function StepsTypingClient() {
                   <div className="absolute left-6 top-0 bottom-0 w-px bg-slate-200" />
 
                   <div className="flex items-start gap-4">
-                    <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-700 to-indigo-700 text-white font-bold">
+                    <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-700/50 text-white font-bold">
                       {s.n}
                     </div>
 
@@ -192,15 +192,6 @@ export default function StepsTypingClient() {
                   <div className="mt-1 text-sm text-gray-700">Un interlocuteur dédié</div>
                 </div>
               </div>
-
-              {/* CTA */}
-            
-              
-
-
-              <p className="mt-3 text-center text-xs text-gray-500">
-                Réponse sous 24h • Sans engagement
-              </p>
             </div>
           </div>
         </div>
