@@ -328,7 +328,7 @@ export default function Home() {
   <div className="-mt-10 max-w-6xl mx-auto">
    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900/60 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/70 mb-3">
           Une gestion de la paie avec une expertise dédiée
         </h3>
         <p className="text-sm text-gray-900/70 leading-relaxed">
@@ -338,7 +338,7 @@ export default function Home() {
       </div>
 
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900/60 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/70 mb-3">
           Une confidentialité totale
         </h3>
         <p className="text-sm text-gray-900/70 leading-relaxed">
@@ -347,7 +347,7 @@ export default function Home() {
       </div>
 
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900/80 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/90 mb-3">
           Des process fiables
         </h3>
         <p className="text-sm text-gray-900 leading-relaxed">
@@ -357,7 +357,7 @@ export default function Home() {
       </div>
 
       <div className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm">
-        <h3 className="text-lg font-bold text-gray-900/80 mb-3">
+        <h3 className="text-lg font-bold text-gray-900/90 mb-3">
           Une relation transparente
         </h3>
         <p className="text-sm text-gray-900 leading-relaxed">
