@@ -111,7 +111,7 @@ export default function ChoisirPrestataireSection() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="mt-8 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
+        <h2 className="mt-5 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
           Nos astuces pour choisir le bon prestataire:
         </h2>
 

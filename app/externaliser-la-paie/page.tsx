@@ -121,7 +121,7 @@ export default function ExternaliserLaPaiePage() {
               <AnimatedFadeIn>
                 <p className="mt-8 text-lg md:text-xl text-white/80 leading-[1.7] max-w-3xl mx-auto">
                   Externaliser la paie consiste à confier la production des bulletins et/ou de la
-                  DSN et les obligations associées à un prestataire spécialisé, afin de
+                  DSN ainsi que les obligations associées à, un prestataire spécialisé afin de
                   réduire les erreurs, de maîtriser les coûts et de faciliter la gestion administrative de votre entreprise.
                 </p>
               </AnimatedFadeIn>
@@ -196,24 +196,26 @@ export default function ExternaliserLaPaiePage() {
             </div>
           </section>
         </div>
+        <section className="py-16 px-6 bg-white">
+      <div className="max-w-6xl mx-auto"></div>
         <h2 className="mt-20 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
                 Comment externaliser la paie ?
               </h2>
              <div className="mt-8 max-w-4xl mx-auto text-center space-y-4">
           <p className="text-lg text-gray-600 leading-relaxed">
-            Pour externaliser la paie il existe plusieurs types de prestataires
-             selon la taille de votre entreprise et vos attentes. Certains cabinets comptables 
+            Pour externaliser la paie il existe plusieurs types de prestataires. Certains cabinets comptables 
              proposent la paie comme une prestation complémentaire, souvent intégrée à un 
              accompagnement global. D’autres entreprises spécialisées, comme GPE Solutions, se consacrent exclusivement 
-             à la gestion de la paie et des déclarations sociales, avec des process dédiés et des 
-             outils spécifiques. Il existe également des solutions logicielles avec assistance, 
-             qui laissent une partie de la production à la charge de l’entreprise. Le choix dépend 
-             généralement du volume de salariés, du budget, de la complexité 
+             à la gestion de la paie. Enfin, vous pouvez également vous tourner vers des gestionnaires de paie 
+             indépendants sur des plateformes de Freelance</p>
+             
+             <p className="mt-8 text-lg text-gray-600 leading-relaxed">Le choix dépend 
+             généralement de votre volume de salariés, du budget, de la complexité 
              sociale et du besoin d’accompagnement au quotidien.
           </p>
 
           <p className="mt-8 text-lg text-gray-600 leading-relaxed">
-            Une fois votre prestataire de paie choisi, il faut organiser l'externalisation avec celui-ci. 
+            Une fois votre prestataire de paie choisi, il faut organiser l'externalisation avec ce dernier. 
             Le processus est généralement le suivant:</p>
         </div>
         {/* Timeline chevrons (SVG) : bordure noire affinée + couleurs douces */}
@@ -319,7 +321,7 @@ export default function ExternaliserLaPaiePage() {
             </div>
           </div>
         </div>
-      
+      </section>
 
         {/* CHECKLIST CHOISIR PRESTATAIRE*/}
        <ChoisirPrestataireSection />
