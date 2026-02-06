@@ -55,7 +55,7 @@ export default function ExternaliserLaPaiePage() {
         />
 
         {/* WRAPPER */}
-        <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/85 to-blue-50">
+        <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/85 to-white">
           {/* Mesh / aurora global */}
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-500/12 blur-3xl" />
@@ -143,91 +143,8 @@ export default function ExternaliserLaPaiePage() {
                   Voir les avantages
                 </a>
               </div>
-
-              {/* 3 cards (style identique) */}
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    >
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
-                    </svg>
-                  </div>
-                  <h2 className="mt-6 text-lg font-semibold text-white/95">
-                    Conformité renforcée
-                  </h2>
-                  <p className="mt-2 text-sm text-white/75">
-                    Un process cadré pour limiter les erreurs et sécuriser DSN & obligations.
-                  </p>
-                </div>
-
-                <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    >
-                      <path d="M4 19a2 2 0 0 0 2 2h12" />
-                      <path d="M6 17V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12" />
-                      <path d="M9 7h6" />
-                      <path d="M9 11h6" />
-                      <path d="M9 15h4" />
-                    </svg>
-                  </div>
-                  <h2 className="mt-6 text-lg font-semibold text-white/95">
-                    Gain de temps immédiat
-                  </h2>
-                  <p className="mt-2 text-sm text-white/75">
-                    Vous déléguez la production, vous gardez le pilotage et la visibilité.
-                  </p>
-                </div>
-
-                <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    >
-                      <path d="M3 17l6-6 4 4 7-7" />
-                      <path d="M21 10V3h-7" />
-                    </svg>
-                  </div>
-                  <h2 className="mt-6 text-lg font-semibold text-white/95">
-                    Coûts maîtrisés
-                  </h2>
-                  <p className="mt-2 text-sm text-white/75">
-                    Une tarification claire et un budget de paie plus prévisible.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-10 flex justify-center">
-                <a
-                  href="#contact"
-                  className="text-sm font-semibold text-white/85 underline underline-offset-4 hover:text-white"
-                >
-                  Parlez nous de votre situation (réponse sous 48h)
-                </a>
-              </div>
-            </div>
-          </section>
+</div>
+             
 
           {/* TRANSITION LINE */}
           <div className="mt-8 flex justify-center">
@@ -236,7 +153,7 @@ export default function ExternaliserLaPaiePage() {
               <div className="absolute -inset-x-8 -inset-y-6 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent blur-2xl" />
             </div>
           </div>
-
+</section>
           {/* SECTION: Avantages */}
           <section id="avantages" className="relative z-10 pt-10 pb-16 px-6 bg-transparent">
             <div className="max-w-6xl mx-auto">
@@ -287,7 +204,23 @@ export default function ExternaliserLaPaiePage() {
         <h2 className="mt-20 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
                 Comment externaliser la paie ?
               </h2>
+             <div className="mt-8 max-w-4xl mx-auto text-center space-y-4">
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Pour externaliser la paie il existe plusieurs types de prestataires
+             selon la taille de votre entreprise et vos attentes. Certains cabinets comptables 
+             proposent la paie comme une prestation complémentaire, souvent intégrée à un 
+             accompagnement global. D’autres entreprises spécialisées, comme GPE Solutions, se consacrent exclusivement 
+             à la gestion de la paie et des déclarations sociales, avec des process dédiés et des 
+             outils spécifiques. Il existe également des solutions logicielles avec assistance, 
+             qui laissent une partie de la production à la charge de l’entreprise. Le choix dépend 
+             généralement du volume de salariés, du budget, de la complexité 
+             sociale et du besoin d’accompagnement au quotidien.
+          </p>
 
+          <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+            Une fois votre prestataire de paie choisi, il faut organiser l'externalisation avec celui-ci. 
+            Le processus est généralement le suivant:</p>
+        </div>
         {/* Timeline chevrons (SVG) : bordure noire affinée + couleurs douces */}
         <div className="mt-12">
           <div className="mx-auto max-w-6xl">

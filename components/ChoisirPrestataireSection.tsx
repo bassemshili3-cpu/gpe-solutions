@@ -2,23 +2,48 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/** Carte tarifs (intégration de ton design, adaptée à une popup) */
-function TarifsGPECard() {
+/** Carte tarifs (croix intégrée + compacte mobile) */
+function TarifsGPECard({ onClose }: { onClose: () => void }) {
   return (
-    <div className="relative w-full max-w-md">
+    <div
+      className="
+        relative w-full max-w-md
+        origin-center
+        scale-[0.60] sm:scale-100
+      "
+    >
       <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl" />
 
-      <div className="relative overflow-hidden rounded-[32px] border border-blue-200 bg-white p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)]">
-        <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-900">
+      <div className="relative overflow-hidden rounded-[28px] border border-blue-200 bg-white p-5 sm:p-8 shadow-[0_20px_60px_rgba(2,6,23,0.10)]">
+        {/* CROIX inside card */}
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Fermer"
+          className="
+            absolute right-3 top-3 sm:right-4 sm:top-4
+            inline-flex h-9 w-9 items-center justify-center
+            rounded-full border border-blue-100
+            bg-white/95 text-gray-800
+            shadow-sm hover:bg-blue-50
+            active:scale-95
+          "
+        >
+          ✕
+        </button>
+
+        <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs sm:text-sm font-semibold text-blue-900">
           <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-br from-blue-600 to-violet-600" />
           Le coût d&apos;un bulletin varie selon l&apos;effectif
         </div>
 
-        <div className="mt-6">
-          <div className="text-sm font-semibold text-gray-500">Tarif / bulletin</div>
+        <div className="mt-5 sm:mt-6">
+          <div className="text-xs sm:text-sm font-semibold text-gray-500">
+            Tarif / bulletin
+          </div>
 
-          <div className="mt-5 rounded-2xl border border-blue-100 bg-gradient-to-b from-white to-blue-50/40 p-3">
-            <div className="grid grid-cols-[1fr_auto] items-center gap-3 px-3 pb-2 text-[11px] font-semibold uppercase tracking-wide text-blue-900/60">
+          <div className="mt-4 sm:mt-5 rounded-2xl border border-blue-100 bg-gradient-to-b from-white to-blue-50/40 p-3">
+            <div className="grid grid-cols-[1fr_auto] items-center gap-3 px-3 pb-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wide text-blue-900/60">
               <span>Effectif</span>
               <span className="text-right">Prix</span>
             </div>
@@ -33,12 +58,14 @@ function TarifsGPECard() {
               ].map(([effectif, prix]) => (
                 <div
                   key={effectif}
-                  className="grid grid-cols-[1fr_auto] items-center gap-3 rounded-xl border border-blue-100 bg-white/80 px-3 py-2.5 shadow-sm"
+                  className="grid grid-cols-[1fr_auto] items-center gap-3 rounded-xl border border-blue-100 bg-white/80 px-3 py-2 shadow-sm"
                 >
-                  <span className="text-sm font-medium text-gray-800">{effectif}</span>
+                  <span className="text-xs sm:text-sm font-medium text-gray-800">
+                    {effectif}
+                  </span>
 
                   <span className="justify-self-end">
-                    <span className="inline-flex items-center rounded-lg bg-gradient-to-br from-blue-800/80 to-indigo-400/80 px-2.5 py-1 text-sm font-bold text-white shadow-sm">
+                    <span className="inline-flex items-center rounded-lg bg-gradient-to-br from-blue-800/80 to-indigo-400/80 px-2.5 py-1 text-xs sm:text-sm font-bold text-white shadow-sm">
                       {prix}
                     </span>
                   </span>
@@ -48,7 +75,7 @@ function TarifsGPECard() {
           </div>
         </div>
 
-        <ul className="mt-8 space-y-3 text-sm text-gray-700">
+        <ul className="mt-6 sm:mt-8 space-y-2.5 sm:space-y-3 text-[11px] sm:text-sm text-gray-700">
           {[
             "Bulletins de paie conformes",
             "Déclaration sociale nominative (DSN)",
@@ -63,16 +90,6 @@ function TarifsGPECard() {
             </li>
           ))}
         </ul>
-
-        <div className="mt-8 flex justify-center">
-          <a
-            href="#contact"
-            className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-b from-blue-800/80 via-indigo-600/80 to-indigo-500/80 px-6 py-3 text-sm font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.25)] active:scale-[0.98]"
-          >
-            J’externalise avec GPE Solutions
-            <span className="transition group-hover:translate-x-0,5">→</span>
-          </a>
-        </div>
       </div>
     </div>
   );
@@ -82,7 +99,6 @@ export default function ChoisirPrestataireSection() {
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
 
-  // Fermer avec ESC
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (e: KeyboardEvent) => {
@@ -95,28 +111,26 @@ export default function ChoisirPrestataireSection() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
+        <h2 className="mt-8 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
           Nos astuces pour choisir le bon prestataire:
         </h2>
 
-        {/* 2 paragraphes légers */}
         <div className="mt-6 max-w-4xl mx-auto text-center space-y-4">
           <p className="text-lg text-gray-600 leading-relaxed">
             Choisissez un prestataire qui apporte un cadre clair : calendrier de
-            collecte/validation, contrôles systématiques, DSN{" "}
-            conforme, traçabilité des échanges, confidentialité (RGPD) et un{" "}
-            interlocuteur réactif quand une situation change (arrêt, prime,
-            entrée/sortie…).
+            collecte/validation, contrôles systématiques, DSN conforme, traçabilité
+            des échanges, confidentialité (RGPD) et un interlocuteur réactif quand
+            une situation change (arrêt, prime, entrée/sortie…).
           </p>
 
           <p className="text-lg text-gray-600 leading-relaxed">
-            Avec <strong>GPE Solutions</strong>, vous évitez les zones floues : un process simple,
-            des livrables propres, et surtout des tarifs <strong> clairs </strong> et <strong> abordables</strong>.
-            Vous gardez la visibilité, on sécurise la production.
+            Avec <strong>GPE Solutions</strong>, vous évitez les zones floues : un
+            process simple, des livrables propres, et surtout des tarifs{" "}
+            <strong>clairs</strong> et <strong>abordables</strong>. Vous gardez la
+            visibilité, on sécurise la production.
           </p>
         </div>
 
-        {/* CTA toggle */}
         <div className="mt-10 flex justify-center">
           <button
             type="button"
@@ -130,7 +144,6 @@ export default function ChoisirPrestataireSection() {
           </button>
         </div>
 
-        {/* MODALE */}
         {open && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
@@ -138,34 +151,18 @@ export default function ChoisirPrestataireSection() {
             aria-modal="true"
             aria-label="Tarifs GPE Solutions"
             onMouseDown={(e) => {
-              // clic sur backdrop => ferme
               if (e.target === e.currentTarget) setOpen(false);
             }}
           >
-            {/* Backdrop */}
             <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" />
 
-            {/* Panel */}
             <div
               id="gpe-tarifs-modal"
               ref={panelRef}
-              className="relative w-full max-w-3xl flex flex-col items-center"
-              onMouseDown={(e) => e.stopPropagation()} // clic dans la carte => ne ferme pas
+              className="relative w-full max-w-3xl flex items-center justify-center"
+              onMouseDown={(e) => e.stopPropagation()}
             >
-              <div className="mb-4 flex w-full items-center justify-between">
-                
-                <button
-                  type="button"
-                  onClick={() => setOpen(false)}
-                  className="rounded-xl bg-white/90 px-3 py-2 text-xs font-bold text-gray-900 shadow-sm hover:bg-white"
-                >
-                  Fermer ✕
-                </button>
-              </div>
-
-              <TarifsGPECard />
-
-              
+              <TarifsGPECard onClose={() => setOpen(false)} />
             </div>
           </div>
         )}
