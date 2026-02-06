@@ -9,7 +9,7 @@ function TarifsGPECard({ onClose }: { onClose: () => void }) {
       className="
         relative w-full max-w-md
         origin-center
-        scale-[0.60] sm:scale-100
+        scale-[0.80] sm:scale-100
       "
     >
       <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-gradient-to-br from-blue-500/25 via-indigo-500/15 to-violet-500/25 blur-2xl" />
