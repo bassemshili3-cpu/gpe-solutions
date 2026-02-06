@@ -130,18 +130,13 @@ export default function ExternaliserLaPaiePage() {
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#contact"
-                  className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-blue-900/70 via-indigo-700/70 to-indigo-600/80 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+                  className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-blue-900/70 via-indigo-600/70 to-indigo-700/80 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
                 >
                   J'externalise
                   <span className="transition group-hover:translate-x-0,5">→</span>
                 </a>
 
-                <a
-                  href="#avantages"
-                  className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-10 py-4 text-base font-semibold text-white/90 shadow-sm backdrop-blur transition hover:border-white/30 hover:bg-white/10"
-                >
-                  Voir les avantages
-                </a>
+                
               </div>
 </div>
              
