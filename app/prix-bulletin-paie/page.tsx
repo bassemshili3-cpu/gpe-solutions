@@ -232,7 +232,7 @@ export default function PrixBulletinDePaiePage() {
           <section className="relative z-10 py-24 px-6 bg-transparent">
             <div className="max-w-5xl mx-auto">
               <h2 className="-mt-20 text-3xl md:text-4xl font-bold text-white text-center">
-                En moyenne, une fiche de paie coûte :
+                En 2026, une fiche de paie coûte en moyenne:
               </h2>
 
               {/* TABLE */}
