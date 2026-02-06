@@ -3,7 +3,6 @@ import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
 import Head from "next/head";
-import RisquesTable from "@/components/RisquesTable";
 import ChoisirPrestataireSection from "@/components/ChoisirPrestataireSection";
 
 
@@ -108,9 +107,9 @@ export default function ExternaliserLaPaiePage() {
           <section className="relative z-10 py-10 px-6 bg-transparent">
             <div className="max-w-5xl mx-auto text-center">
               <AnimatedFadeIn>
-                <h1 className="mt-16 text-3xl md:text-4xl font-bold text-white/95">
-                  Externaliser la paie : le guide clair pour gagner du temps, sécuriser
-                  vos bulletins et rester conforme
+                <h1 className="mt-16 text-2xl md:text-4xl font-bold text-white/95">
+                  GUIDE COMPLET POUR SAVOIR COMMENT EXTERNALISER LA PAIE 
+              
                 </h1>
               </AnimatedFadeIn>
 
@@ -120,9 +119,9 @@ export default function ExternaliserLaPaiePage() {
 
               <AnimatedFadeIn>
                 <p className="mt-8 text-lg md:text-xl text-white/80 leading-[1.7] max-w-3xl mx-auto">
-                  Externaliser la paie consiste à confier la production des bulletins et/ou de la
-                  DSN ainsi que les obligations associées à, un prestataire spécialisé afin de
-                  réduire les erreurs, de maîtriser les coûts et de faciliter la gestion administrative de votre entreprise.
+                  Cette page vous donnera toutes les informations pertinentes pour pouvoir externaliser la paie de votre entreprise. Externaliser consiste à confier la production des bulletins et/ou de la
+                  DSN ainsi que les obligations associées à un prestataire spécialisé, 
+                  
                 </p>
               </AnimatedFadeIn>
 
@@ -154,12 +153,14 @@ export default function ExternaliserLaPaiePage() {
             <div className="max-w-6xl mx-auto">
               <AnimatedFadeIn>
                 <h2 className="-mt-5 text-3xl md:text-4xl font-bold text-white text-center">
-                  Pourquoi externaliser la paie ?
+                  LES AVANTAGES
                 </h2>
-                <p className="mt-6 text-white/75 text-center text-xl mx-auto leading-relaxed">
-                  Externaliser la paie ne permet pas seulement de gagner du temps, il s'agit également de réduire le risque d’erreurs,
-                  et de fiabiliser les déclarations sociales. C’est aussi un moyen simple de
-                  sécuriser votre conformité en continu.
+                <p className="mt-6 text-white/85 text-center text-xl mx-auto leading-relaxed">
+                  Il est vrai que pour une entreprise, externaliser la paie permet souvent un gain de temps considérable, mais c'est loin d'être le seul avantage. 
+                  Cela permet également de réduire le risque d’erreurs, et de fiabiliser vos déclarations sociales, afin d'assurer une 
+                  conformité de manière continue. C’est donc avant tout une <strong>sécurité</strong> pour votre entreprise. Il est bon de rappeler 
+                  que la paye française est complexe, et peut représenter une charge mentale, ce qui donne toute la pertinence 
+                  au service d'externalisation 
                 </p>
               </AnimatedFadeIn>
 
@@ -186,8 +187,8 @@ export default function ExternaliserLaPaiePage() {
                     key={card.title}
                     className="rounded-3xl border border-blue-300/30 bg-blue-950/50 p-8 shadow-xl backdrop-blur-lg"
                   >
-                    <h3 className="text-lg font-bold text-white/95">{card.title}</h3>
-                    <p className="mt-3 text-sm text-white/75 leading-relaxed">
+                    <h3 className="text-lg font-bold text-white">{card.title}</h3>
+                    <p className="mt-3 text-sm text-white ">
                       {card.desc}
                     </p>
                   </div>
@@ -198,21 +199,16 @@ export default function ExternaliserLaPaiePage() {
         </div>
         <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto"></div>
-        <h2 className="mt-20 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
+        <h2 className="-mt-5 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
                 Comment externaliser la paie ?
               </h2>
              <div className="mt-8 max-w-4xl mx-auto text-center space-y-4">
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Pour externaliser la paie il existe plusieurs types de prestataires. Certains cabinets comptables 
-             proposent la paie comme une prestation complémentaire, souvent intégrée à un 
-             accompagnement global. D’autres entreprises spécialisées, comme GPE Solutions, se consacrent exclusivement 
+         
+           <p className="mt-8 text-lg text-gray-600 leading-relaxed"> Pour externaliser la paie il vous faut d'abord choisir le prestataire que vous souhaitez, parmi plusieurs options. 
+            Vous pouvez par exemple vous tourner vers un cabinet comptable. Ils proposent la paie comme une prestation complémentaire, souvent intégrée à un 
+             accompagnement global. Sinon, d’autres entreprises spécialisées, comme GPE Solutions, se consacrent exclusivement 
              à la gestion de la paie. Enfin, vous pouvez également vous tourner vers des gestionnaires de paie 
              indépendants sur des plateformes de Freelance</p>
-             
-             <p className="mt-8 text-lg text-gray-600 leading-relaxed">Le choix dépend 
-             généralement de votre volume de salariés, du budget, de la complexité 
-             sociale et du besoin d’accompagnement au quotidien.
-          </p>
 
           <p className="mt-8 text-lg text-gray-600 leading-relaxed">
             Une fois votre prestataire de paie choisi, il faut organiser l'externalisation avec ce dernier. 

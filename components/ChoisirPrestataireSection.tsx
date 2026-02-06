@@ -1,5 +1,5 @@
 "use client";
-
+import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import { useEffect, useRef, useState } from "react";
 
 /** Carte tarifs (croix intégrée + compacte mobile) */
@@ -111,23 +111,32 @@ export default function ChoisirPrestataireSection() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="mt-5 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
+        <h2 className="-mt-6 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
           Nos astuces pour choisir le bon prestataire:
         </h2>
 
         <div className="mt-6 max-w-4xl mx-auto text-center space-y-4">
           <p className="text-lg text-gray-600 leading-relaxed">
-            Choisissez un prestataire qui apporte un cadre clair : calendrier de
-            collecte/validation, contrôles systématiques, DSN conforme, traçabilité
-            des échanges, confidentialité (RGPD) et un interlocuteur réactif quand
-            une situation change (arrêt, prime, entrée/sortie…).
+            Nous vous recommandons de choisir un prestataire qui apporte un cadre clair, avec idéalement un calendrier de
+            collecte/validation, des contrôles systématiques, une DSN conforme, un respect strict confidentialité (La paie implique des données très sensibles) et un interlocuteur réactif quand
+            une situation change (arrêt, prime, entrée/sortie etc).
           </p>
 
+            <p className="mt-8 text-lg text-gray-600 leading-relaxed">Le choix dépend 
+             généralement de votre volume de salariés, du budget, de la complexité 
+             sociale et du besoin d’accompagnement au quotidien. Par expérience, un cabinet d'expertise 
+             comptable et certains services dédiés proposent généralement une externalisation "premium" dans le sens où ils utilisent
+             des logiciels de paie haut de gamme et coûteux, tel que Silae ou encore Sage, qui permettent de traiter de gros volumes de fiches de paies de façon fiable</p>
+             
+             <p className="mt-8 text-lg text-gray-600 leading-relaxed">En revanche, nous constatons que pour les clients qui ont besoin d'un accompagnement plus important et régulier
+             (souvent des TPE/PME), un service d'externalisation dédié à la paie, ou encore un gestionnaire de paie indépendant,
+             est une option à privilégier.</p>
+
           <p className="text-lg text-gray-600 leading-relaxed">
-            Avec <strong>GPE Solutions</strong>, vous évitez les zones floues : un
-            process simple, des livrables propres, et surtout des tarifs{" "}
-            <strong>clairs</strong> et <strong>abordables</strong>. Vous gardez la
-            visibilité, on sécurise la production.
+            En sollicitant le service d'externalisation de la paie <strong>GPE Solutions</strong>, vous évitez les zones floues : notre
+            process est simple, la production est sécurisée, et nous proposons des tarifs{" "}
+            <strong>clairs</strong> et <strong>abordables</strong>. 
+            Notre service est premium et inclus l'utilisation du logiciel Sage, uné référence en paie. 
           </p>
         </div>
 
