@@ -3,8 +3,11 @@ import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
 import Head from "next/head";
+import Option1 from "@/components/option1"
 
-export default function PrixBulletinDePaiePage() {
+
+
+ export default function PrixBulletinDePaiePage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -102,7 +105,7 @@ export default function PrixBulletinDePaiePage() {
           
 
           {/* HERO */}
-          <section className="relative z-10 py-10 px-6 bg-transparent">
+          <div className="relative z-10 py-10 px-6 bg-transparent">
             <div className="relative max-w-5xl mx-auto text-center">
               {/* === SYMBOLS € DISCRETS (SEO-FRIENDLY) === */}
 <div className="pointer-events-none absolute inset-0">
@@ -163,51 +166,10 @@ export default function PrixBulletinDePaiePage() {
                 <div className="mx-auto mt-4 h-px w-40 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
               </div>
 
-              {/* 3 cards */}
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    title: "La méthode de tarification",
-                    desc: "Au bulletin, à l'heure, à la journée ou au forfait : l’objectif est d’être toujours lisible et prévisible.",
-                    icon: (
-                      <path d="M9 7h6M9 11h6M9 15h4M6 17V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12" />
-                    ),
-                  },
-                  {
-                    title: "La complexité du dossier",
-                    desc: "Plus il y a d’événements, plus le bulletin demande du contrôle.",
-                    icon: <path d="M3 17l6-6 4 4 7-7" />,
-                  },
-                  {
-                    title: "Les services inclus",
-                    desc: "Logiciel utilisé, entrées/sorties, support ? le prix reflète l’étendue du service.",
-                    icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />,
-                  },
-                ].map((card) => (
-                  <div
-                    key={card.title}
-                    className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20"
-                  >
-                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        className="h-6 w-6"
-                        aria-hidden="true"
-                      >
-                        {card.icon}
-                      </svg>
-                    </div>
-                    <h2 className="mt-6 text-lg font-semibold text-white/95">
-                      {card.title}
-                    </h2>
-                    <p className="mt-2 text-sm text-white/75">{card.desc}</p>
-                  </div>
-                ))}
-              </div>
+              
+<Option1 />
+
+
 
               <div className="mt-8 flex justify-center">
                 <a
@@ -218,7 +180,7 @@ export default function PrixBulletinDePaiePage() {
                 </a>
               </div>
             </div>
-          </section>
+          </div>
 
           {/* LINE */}
           <div className="flex justify-center">
@@ -229,7 +191,7 @@ export default function PrixBulletinDePaiePage() {
           </div>
 
           {/* ================= COÛT MOYEN D’UNE FICHE DE PAIE ================= */}
-          <section className="relative z-10 py-24 px-6 bg-transparent">
+          <div className="relative z-10 py-24 px-6 bg-transparent">
             <div className="max-w-5xl mx-auto">
               <h2 className="-mt-20 text-3xl md:text-4xl font-bold text-white text-center">
                 En 2026, une fiche de paie coûte en moyenne:
@@ -325,10 +287,10 @@ export default function PrixBulletinDePaiePage() {
                 <span className="font-semibold text-white"> accessible</span>
               </p>
             </div>
-          </section>
+          </div>
 
           {/* ================= TRANSITION VERS LA GRILLE (PUNCHY) ================= */}
-          <section className="relative z-10 px-6 pb-10">
+          <div className="relative z-10 px-6 pb-10">
             <div className="max-w-5xl mx-auto">
               <div className="-mt-10 border-l-2 border-white/30 pl-6">
                 <div className="text-xs uppercase tracking-widest text-white/60">
@@ -369,10 +331,10 @@ export default function PrixBulletinDePaiePage() {
                 </p>
               </div>
             </div>
-          </section>
+          </div>
 
           {/* SECTION: grille tarifaire */}
-          <div className="max-w-6xl mx-auto px-6 py-16">
+          <div className="-mt-6 max-w-6xl mx-auto px-6 py-16">
             <AnimatedFadeIn>
               <h2 className="-mt-5 text-3xl md:text-4xl font-bold text-white text-center">
                 La Grille tarifaire <br />
@@ -455,34 +417,25 @@ export default function PrixBulletinDePaiePage() {
             </div>
           </div>
 
-          {/* ✅ IMPORTANT : on ferme le wrapper ICI, après la section coûts moyens */}
-        </div>
-
- {/* ================= CONTACT ================= */}
-      <section
-        id="contact"
-        className="py-10 px-6 bg-white"
-      >
-        <div className="max-w-3xl mx-auto">
-          <AnimatedFadeIn>
-            <h2 className="text-4xl font-bold text-blue-900 mb-2 text-center">
+             {/*Formulaire*/}
+                    <div id="contact" className="max-w-3xl mx-auto scroll-mt-5">
+                      <AnimatedFadeIn>
+            <h2 className="mt-7 text-4xl font-bold text-white mb-2 text-center">
               Formulaire de contact
             </h2>
-            <p className="text-gray-600 text-center mb-12">
-              Réponse garantie{" "}
-              <span className="font-semibold text-blue-900">sous 48 heures</span>
-              .
-            </p>
-          </AnimatedFadeIn>
-
-          <AnimatedFadeIn>
-            <ContactForm />
-          </AnimatedFadeIn>
-        </div>
-      </section>
+             <p className="text-white text-center mb-12">
+                        Réponse garantie{" "}
+                        <span className="font-semibold text-white">sous 48 heures</span>.
+                      </p>
+                    </AnimatedFadeIn>
+        
+                    <AnimatedFadeIn>
+                      <ContactForm />
+                    </AnimatedFadeIn>
+                  </div>
 
         {/* SECTION: FAQ */}
-<section className="-mt-10 py-24 px-6">
+<div className="-mt-10 py-18 px-1">
   <div className="max-w-5xl mx-auto">
     <AnimatedFadeIn>
       <div className="text-center">
@@ -537,12 +490,11 @@ export default function PrixBulletinDePaiePage() {
       ))}
     </div>
   </div>
-</section>
+</div>
 
-
-        {/* FOOTER */}
-        <footer className="py-10 px-6 border-t border-blue-100 bg-white">
-          <div className="max-w-6xl mx-auto text-center text-xs text-gray-500">
+      {/* FOOTER */}
+        
+          <div className= "mt-5 mx-auto-w-6x1 px-6 py-12 text-center text-xs text-gray-500">
             <div>© 2026 GPE Solutions. Tous droits réservés.</div>
 
             <div className="mt-3 flex items-center justify-center gap-3">
@@ -561,8 +513,11 @@ export default function PrixBulletinDePaiePage() {
               </a>
             </div>
           </div>
-        </footer>
+        
+         {/* ✅ IMPORTANT : on ferme le wrapper ICI, après la section coûts moyens */}
+        </div>
       </main>
     </>
-  );
+      );
 }
+  

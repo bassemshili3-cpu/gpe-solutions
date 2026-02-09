@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-
 type Step = {
   n: string;
   title: string;
@@ -18,7 +17,7 @@ const STEPS: Step[] = [
   {
     n: "2",
     title: "On vous répond",
-    desc: "Afin de cadrer vos besoins, et vos priorités.",
+    desc: "Afin de cadrer vos besoins et vos priorités.",
   },
   {
     n: "3",
@@ -28,45 +27,44 @@ const STEPS: Step[] = [
   {
     n: "4",
     title: "Production & DSN",
-    desc: "Nous préparons Bulletins, contrôles, et la DSN.",
-},
+    desc: "Nous préparons les bulletins, les contrôles et la DSN.",
+  },
   {
     n: "5",
     title: "Validation",
-    desc: "Nous vous envoyons vos bulletins de paie pour validation, avant clôture.",
+    desc: "Nous vous envoyons les bulletins pour validation avant clôture.",
   },
 ];
 
 export default function StepsTypingClient() {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   const [started, setStarted] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [typedTitle, setTypedTitle] = useState("");
 
-  // Déclenchement au scroll (une seule fois)
+  /* Déclenchement au scroll (une seule fois) */
   useEffect(() => {
     if (started) return;
 
-    const el = sectionRef.current;
+    const el = containerRef.current;
     if (!el) return;
 
-    const obs = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry && entry.isIntersecting) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
           setStarted(true);
-          obs.disconnect();
+          observer.disconnect();
         }
       },
-      { threshold: 0.25 },
+      { threshold: 0.25 }
     );
 
-    obs.observe(el);
-    return () => obs.disconnect();
+    observer.observe(el);
+    return () => observer.disconnect();
   }, [started]);
 
-  // Apparition séquentielle des étapes
+  /* Apparition séquentielle */
   useEffect(() => {
     if (!started) return;
 
@@ -85,11 +83,11 @@ export default function StepsTypingClient() {
     return () => clearInterval(timer);
   }, [started]);
 
-  // Typing sur le titre de l’étape active
+  /* Typing sur le titre actif */
   useEffect(() => {
     if (activeIndex < 0) return;
 
-    const full = STEPS[activeIndex]?.title ?? "";
+    const full = STEPS[activeIndex].title;
     setTypedTitle("");
 
     let j = 0;
@@ -101,16 +99,16 @@ export default function StepsTypingClient() {
 
     return () => clearInterval(t);
   }, [activeIndex]);
- return (
-    <section ref={sectionRef} className="py-20 px-6 bg-gradient-to-b from-blue-50/50 via-white to-white">
-      <div className="max-w-6x1 mx-auto">
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900/70">
-            Les étapes pour externaliser votre paie
-          </h2>
-        </div>
 
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
+  return (
+    <div ref={containerRef} className="relative px-6 py-24">
+      <div className="max-w-6xl mx-auto">
+        {/* Titre */}
+        <h2 className="-mt-20 text-3xl md:text-4xl font-bold text-white text-center">
+          Les étapes pour externaliser votre paie
+        </h2>
+
+        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Colonne gauche : étapes */}
           <div className="space-y-4">
             {STEPS.map((s, idx) => {
@@ -121,38 +119,37 @@ export default function StepsTypingClient() {
                 <div
                   key={s.n}
                   className={[
-                    "relative rounded-3xl border p-6 transition",
-                    reached ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3",
+                    "relative rounded-3xl border p-6 transition-all",
+                    reached
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-4",
                     current
-                      ? "border-blue-200 bg-blue-50/60 shadow-sm"
-                      : "border-slate-200 bg-white",
+                      ? "border-white/40 bg-white/15 backdrop-blur shadow-lg"
+                      : "border-white/20 bg-white/10 backdrop-blur-sm",
                   ].join(" ")}
                   style={{
-                    transitionDuration: "550ms",
+                    transitionDuration: "1200ms",
                     transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
                   }}
                 >
-                  {/* barre verticale */}
-                  <div className="absolute left-6 top-0 bottom-0 w-px bg-slate-200" />
-
                   <div className="flex items-start gap-4">
-                    <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-indigo-700/50 text-white font-bold">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500/70 to-indigo-700/70 text-white font-bold">
                       {s.n}
                     </div>
 
                     <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900">
+                      <h3 className="font-semibold text-white">
                         {current ? (
                           <>
                             {typedTitle}
-                            <span className="ml-0.5 inline-block h-4 w-0.5 align-[-2px] bg-blue-700/70 animate-caret" />
+                            <span className="ml-0.5 inline-block h-4 w-0.5 bg-white/70 animate-pulse" />
                           </>
                         ) : (
                           s.title
                         )}
                       </h3>
 
-                      <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                      <p className="mt-2 text-sm text-white/80 leading-relaxed">
                         {s.desc}
                       </p>
                     </div>
@@ -162,40 +159,43 @@ export default function StepsTypingClient() {
             })}
           </div>
 
-          {/* Colonne droite : carte “résumé” */}
+          {/* Colonne droite : carte résumé */}
           <div className="relative">
-            <div className="pointer-events-none absolute -inset-6 rounded-[40px] bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent blur-3xl" />
-            <div className="relative rounded-[32px] border border-blue-100 bg-gradient-to-b from-white to-blue-50 p-10 shadow-[0_20px_60px_rgba(2,6,23,0.08)]">
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/70 px-3 py-1 text-xs font-semibold text-blue-900">
+            <div className="pointer-events-none absolute -inset-6 rounded-[40px] bg-gradient-to-br from-blue-500/15 via-indigo-500/10 to-transparent blur-3xl" />
+
+            <div className="relative rounded-[32px] border border-white/30 bg-white/15 backdrop-blur-xl p-10 shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
+              <div className="inline-flex items-center rounded-full border border-white/30 bg-white/20 px-3 py-1 text-xs font-semibold text-white">
                 Process maîtrisé
               </div>
 
-              <h3 className="mt-5 text-xl font-bold text-gray-900">
+              <h3 className="mt-5 text-xl font-bold text-white">
                 Une paie fiable et sans stress
               </h3>
 
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="rounded-2xl border border-blue-100 bg-white p-4">
-                  <div className="text-xs font-semibold text-blue-900">Contrôles</div>
-                  <div className="mt-1 text-sm text-gray-700">Vérifications systématiques</div>
-                </div>
-                <div className="rounded-2xl border border-blue-100 bg-white p-4">
-                  <div className="text-xs font-semibold text-blue-900">Conformité</div>
-                  <div className="mt-1 text-sm text-gray-700">DSN & obligations sociales</div>
-                </div>
-                <div className="rounded-2xl border border-blue-100 bg-white p-4">
-                  <div className="text-xs font-semibold text-blue-900">Confidentialité</div>
-                  <div className="mt-1 text-sm text-gray-700">Traitement strict des données</div>
-                </div>
-                <div className="rounded-2xl border border-blue-100 bg-white p-4">
-                  <div className="text-xs font-semibold text-blue-900">Suivi</div>
-                  <div className="mt-1 text-sm text-gray-700">Un interlocuteur dédié</div>
-                </div>
+                {[
+                  ["Contrôles", "Vérifications systématiques"],
+                  ["Conformité", "DSN & obligations sociales"],
+                  ["Confidentialité", "Traitement strict des données"],
+                  ["Suivi", "Un interlocuteur dédié"],
+                ].map(([title, desc]) => (
+                  <div
+                    key={title}
+                    className="rounded-2xl border border-white/30 bg-white/10 p-4"
+                  >
+                    <div className="text-xs font-semibold text-white">
+                      {title}
+                    </div>
+                    <div className="mt-1 text-sm text-white/80">
+                      {desc}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

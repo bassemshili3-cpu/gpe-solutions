@@ -14,12 +14,10 @@ export default function MentionsLegalesPage() {
             Le présent site est édité sous le nom commercial <strong>GPE Solutions</strong>.
           </p>
           <ul className="list-disc pl-5">
-            <li>Consultant : (Nom et prénom à compléter)</li>
-            <li>Statut : Salarié porté</li>
-            <li>Société de portage salarial : (Nom de la société)</li>
-            <li>Forme juridique : (à compléter)</li>
-            <li>Adresse du siège social : (adresse complète)</li>
-            <li>Numéro SIREN : (à compléter)</li>
+            <li>Régime: Micro-entreprise</li>
+            <li>Société: GPE Solutions</li>
+            <li>Adresse du siège social : 27 rue de Plaisance, 42400 Saint-Chamond</li>
+            <li>Numéro SIREN : 884808205 </li>
             <li>Email : contact@gpe-solutions.fr</li>
           </ul>
 
@@ -27,19 +25,19 @@ export default function MentionsLegalesPage() {
             Directeur de la publication
           </h2>
           <p>
-            Le directeur de la publication est : <strong>(Nom et prénom)</strong>.
+            Le directeur de la publication est : <strong>MR SHILI Bassem</strong>.
           </p>
 
           <h2 className="text-lg font-semibold text-gray-900">
             Hébergement
           </h2>
           <p>
-            Le site est hébergé par :
+            Le site est hébergé par : Société Vercel
           </p>
           <ul className="list-disc pl-5">
-            <li>Nom de l’hébergeur : (ex. Vercel, OVH, etc.)</li>
-            <li>Adresse : (adresse de l’hébergeur)</li>
-            <li>Téléphone : (à compléter)</li>
+            <li>Nom de l’hébergeur : Vercel</li>
+            <li>Adresse : 340 S Lemon Ave #4133 Walnut, CA 91789</li>
+            <li>Téléphone : (559) 288-7060</li>
           </ul>
 
           <h2 className="text-lg font-semibold text-gray-900">

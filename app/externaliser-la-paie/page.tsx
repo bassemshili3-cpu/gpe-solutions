@@ -54,7 +54,7 @@ export default function ExternaliserLaPaiePage() {
         />
 
         {/* WRAPPER */}
-        <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/85 to-white">
+        <div className="relative overflow-x-hidden overflow-y-visible bg-gradient-to-b from-blue-950 via-blue-950/90 to-white">
           {/* Mesh / aurora global */}
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-blue-500/12 blur-3xl" />
@@ -104,10 +104,10 @@ export default function ExternaliserLaPaiePage() {
           </header>
 
           {/* HERO */}
-          <section className="relative z-10 py-10 px-6 bg-transparent">
+          
             <div className="max-w-5xl mx-auto text-center">
               <AnimatedFadeIn>
-                <h1 className="mt-16 text-2xl md:text-4xl font-bold text-white/95">
+                <h1 className="mt-16 text-2xl md:text-4xl font-bold text-white">
                   GUIDE COMPLET POUR SAVOIR COMMENT EXTERNALISER LA PAIE 
               
                 </h1>
@@ -128,31 +128,29 @@ export default function ExternaliserLaPaiePage() {
               {/* CTA row */}
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="#contact"
-                  className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-blue-900/70 via-indigo-600/70 to-indigo-700/80 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
-                >
-                  J'externalise
-                  <span className="transition group-hover:translate-x-0,5">→</span>
-                </a>
+  href="#contact"
+  className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-br from-blue-900/70 via-indigo-600/70 to-indigo-700/80 px-10 py-4 text-base font-bold text-white shadow-lg transition-all hover:brightness-100 hover:shadow-[0_20px_60px_rgba(37,99,235,0.35)] active:scale-[0.98]"
+>
+  J&apos;externalise
+  <span className="transition group-hover:translate-x-0.5">→</span>
+</a>
 
-                
+             </div>
               </div>
-</div>
              
-
-          {/* TRANSITION LINE */}
+               {/* TRANSITION LINE */}
           <div className="mt-8 flex justify-center">
             <div className="relative h-px w-72">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
               <div className="absolute -inset-x-8 -inset-y-6 bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent blur-2xl" />
             </div>
           </div>
-</section>
+
           {/* SECTION: Avantages */}
-          <section id="avantages" className="relative z-10 pt-10 pb-16 px-6 bg-transparent">
+         
             <div className="max-w-6xl mx-auto">
               <AnimatedFadeIn>
-                <h2 className="-mt-5 text-3xl md:text-4xl font-bold text-white text-center">
+                <h2 className="mt-5 text-3xl md:text-4xl font-bold text-white text-center">
                   LES AVANTAGES
                 </h2>
                 <p className="mt-6 text-white/85 text-center text-xl mx-auto leading-relaxed">
@@ -195,155 +193,186 @@ export default function ExternaliserLaPaiePage() {
                 ))}
               </div>
             </div>
-          </section>
-        </div>
-        <section className="py-16 px-6 bg-white">
+
+    
+        
       <div className="max-w-6xl mx-auto"></div>
-        <h2 className="-mt-5 text-3xl md:text-3xl font-bold text-blue-800/80 text-center">
+        <h2 className="mt-15 text-3xl md:text-3xl font-bold text-white text-center">
                 Comment externaliser la paie ?
               </h2>
              <div className="mt-8 max-w-4xl mx-auto text-center space-y-4">
          
-           <p className="mt-8 text-lg text-gray-600 leading-relaxed"> Pour externaliser la paie il vous faut d'abord choisir le prestataire que vous souhaitez, parmi plusieurs options. 
+           <p className="mt-8 text-lg text-white/80 leading-relaxed"> Pour externaliser la paie il vous faut d'abord choisir le prestataire que vous souhaitez, parmi plusieurs options. 
             Vous pouvez par exemple vous tourner vers un cabinet comptable. Ils proposent la paie comme une prestation complémentaire, souvent intégrée à un 
              accompagnement global. Sinon, d’autres entreprises spécialisées, comme GPE Solutions, se consacrent exclusivement 
              à la gestion de la paie. Enfin, vous pouvez également vous tourner vers des gestionnaires de paie 
              indépendants sur des plateformes de Freelance</p>
 
-          <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-8 text-lg text-white/80 leading-relaxed">
             Une fois votre prestataire de paie choisi, il faut organiser l'externalisation avec ce dernier. 
             Le processus est généralement le suivant:</p>
         </div>
-        {/* Timeline chevrons (SVG) : bordure noire affinée + couleurs douces */}
-        <div className="mt-12">
-          <div className="mx-auto max-w-6xl">
-            <div className="overflow-x-auto pb-4">
-              <div className="min-w-[980px]">
-                <svg
-                  viewBox="0 0 1200 140"
-                  className="w-full h-[110px]"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <defs>
-                    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0" stopColor="rgba(59,130,246,0.28)" />
-                      <stop offset="1" stopColor="rgba(34,211,238,0.22)" />
-                    </linearGradient>
-                    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0" stopColor="rgba(99,102,241,0.26)" />
-                      <stop offset="1" stopColor="rgba(236,72,153,0.18)" />
-                    </linearGradient>
-                    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0" stopColor="rgba(124,58,237,0.24)" />
-                      <stop offset="1" stopColor="rgba(14,165,233,0.20)" />
-                    </linearGradient>
-                  </defs>
 
-                  <polygon
-                    points="0,20 380,20 450,70 380,120 0,120"
-                    fill="url(#g1)"
-                    stroke="#000"
-                    strokeWidth="4"
-                    strokeLinejoin="round"
-                  />
+        {/* Timeline chevrons (SVG) – adaptée fond sombre */}
+<div className="mt-12">
+  <div className="mx-auto max-w-6xl">
+    <div className="overflow-x-auto pb-4">
+      <div className="min-w-[980px]">
+        <svg
+          viewBox="0 0 1200 140"
+          className="w-full h-[110px]"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            {/* Gradients plus lumineux */}
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stopColor="rgba(96,165,250,0.55)" />
+              <stop offset="1" stopColor="rgba(34,211,238,0.45)" />
+            </linearGradient>
 
-                  <polygon
-                    points="420,20 780,20 850,70 780,120 420,120 490,70"
-                    fill="url(#g2)"
-                    stroke="#000"
-                    strokeWidth="4"
-                    strokeLinejoin="round"
-                  />
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stopColor="rgba(129,140,248,0.55)" />
+              <stop offset="1" stopColor="rgba(236,72,153,0.40)" />
+            </linearGradient>
 
-                  <polygon
-                    points="820,20 1200,20 1200,120 820,120 890,70"
-                    fill="url(#g3)"
-                    stroke="#000"
-                    strokeWidth="4"
-                    strokeLinejoin="round"
-                  />
+            <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stopColor="rgba(167,139,250,0.55)" />
+              <stop offset="1" stopColor="rgba(56,189,248,0.45)" />
+            </linearGradient>
+          </defs>
 
-                  <g>
-                    <circle cx="220" cy="70" r="20" fill="rgba(255,255,255,0.55)" stroke="#000" strokeWidth="2" />
-                    <text x="220" y="76" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111">1</text>
+          {/* Chevrons */}
+          <polygon
+            points="0,20 380,20 450,70 380,120 0,120"
+            fill="url(#g1)"
+            stroke="rgba(255,255,255,0.35)"
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
 
-                    <circle cx="635" cy="70" r="20" fill="rgba(255,255,255,0.55)" stroke="#000" strokeWidth="2" />
-                    <text x="635" y="76" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111">2</text>
+          <polygon
+            points="420,20 780,20 850,70 780,120 420,120 490,70"
+            fill="url(#g2)"
+            stroke="rgba(255,255,255,0.35)"
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
 
-                    <circle cx="1045" cy="70" r="20" fill="rgba(255,255,255,0.55)" stroke="#000" strokeWidth="2" />
-                    <text x="1045" y="76" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111">3</text>
-                  </g>
-                </svg>
+          <polygon
+            points="820,20 1200,20 1200,120 820,120 890,70"
+            fill="url(#g3)"
+            stroke="rgba(255,255,255,0.35)"
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
 
-                <div className="mt-6 grid grid-cols-3 gap-10 text-center">
-                  <div>
-                    <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-blue-50 text-blue-700 ring-1 ring-blue-100">
-                      Vous
-                    </span>
-                    <h3 className="mt-3 text-2xl font-semibold text-gray-900 tracking-tight">
-                      Collecte des variables
-                    </h3>
-                    <p className="mt-2 text-base text-gray-600">
-                      Absences, primes, heures…
-                    </p>
-                  </div>
+          {/* Cercles numérotés */}
+          <g>
+            <circle
+              cx="220"
+              cy="70"
+              r="20"
+              fill="rgba(255,255,255,0.85)"
+              stroke="rgba(255,255,255,0.6)"
+              strokeWidth="2"
+            />
+            <text x="220" y="76" textAnchor="middle" fontSize="16" fontWeight="700" fill="#0f172a">
+              1
+            </text>
 
-                  <div>
-                    <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-indigo-50 text-indigo-700 ring-1 ring-indigo-100">
-                      Nous
-                    </span>
-                    <h3 className="mt-3 text-2xl font-semibold text-gray-900 tracking-tight">
-                      Production & contrôle
-                    </h3>
-                    <p className="mt-2 text-base text-gray-600">
-                      Édition + contrôles paie
-                    </p>
-                  </div>
+            <circle
+              cx="635"
+              cy="70"
+              r="20"
+              fill="rgba(255,255,255,0.85)"
+              stroke="rgba(255,255,255,0.6)"
+              strokeWidth="2"
+            />
+            <text x="635" y="76" textAnchor="middle" fontSize="16" fontWeight="700" fill="#0f172a">
+              2
+            </text>
 
-                  <div>
-                    <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-violet-50 text-violet-700 ring-1 ring-violet-100">
-                      Nous
-                    </span>
-                    <h3 className="mt-3 text-2xl font-semibold text-gray-900 tracking-tight">
-                      DSN & livrables
-                    </h3>
-                    <p className="mt-2 text-base text-gray-600">
-                      DSN + bulletins + archivage
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <circle
+              cx="1045"
+              cy="70"
+              r="20"
+              fill="rgba(255,255,255,0.85)"
+              stroke="rgba(255,255,255,0.6)"
+              strokeWidth="2"
+            />
+            <text x="1045" y="76" textAnchor="middle" fontSize="16" fontWeight="700" fill="#0f172a">
+              3
+            </text>
+          </g>
+        </svg>
+
+        {/* Libellés */}
+        <div className="mt-6 grid grid-cols-3 gap-10 text-center">
+          <div>
+            <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-blue-500/15 text-blue-200 ring-1 ring-blue-400/30">
+              Vous
+            </span>
+            <h3 className="mt-3 text-2xl font-semibold text-white tracking-tight">
+              Collecte des variables
+            </h3>
+            <p className="mt-2 text-base text-white/80">
+              Absences, primes, heures…
+            </p>
+          </div>
+
+          <div>
+            <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-indigo-500/15 text-indigo-200 ring-1 ring-indigo-400/30">
+              Nous
+            </span>
+            <h3 className="mt-3 text-2xl font-semibold text-white tracking-tight">
+              Production & contrôle
+            </h3>
+            <p className="mt-2 text-base text-white/80">
+              Édition + contrôles paie
+            </p>
+          </div>
+
+          <div>
+            <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-violet-500/15 text-violet-200 ring-1 ring-violet-400/30">
+              Nous
+            </span>
+            <h3 className="mt-3 text-2xl font-semibold text-white tracking-tight">
+              DSN & livrables
+            </h3>
+            <p className="mt-2 text-base text-white/80">
+              DSN + bulletins + archivage
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</div>
 
         {/* CHECKLIST CHOISIR PRESTATAIRE*/}
        <ChoisirPrestataireSection />
-
-
-        {/* CONTACT */}
-        <section id="contact" className="py-10 px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <AnimatedFadeIn>
-              <h2 className="text-4xl font-bold text-blue-900 mb-2 text-center">
-                Formulaire de contact
-              </h2>
-              <p className="text-gray-600 text-center mb-12">
-                Réponse garantie <span className="font-semibold text-blue-900">sous 48 heures</span>.
-              </p>
-            </AnimatedFadeIn>
-
-            <AnimatedFadeIn>
-              <ContactForm />
-            </AnimatedFadeIn>
-          </div>
-        </section>
-
-        {/* FOOTER */}
-        <footer className="py-10 px-6 border-t border-blue-100 bg-white">
-          <div className="max-w-6xl mx-auto text-center text-xs text-gray-500">
+        
+       {/*Formulaire*/}
+                   <div id="contact" className="max-w-3xl mx-auto scroll-mt-5">
+                     <AnimatedFadeIn>
+           <h2 className="mt-10 text-4xl font-bold text-white mb-2 text-center">
+             Formulaire de contact
+           </h2>
+            <p className="text-white text-center mb-12">
+                       Réponse garantie{" "}
+                       <span className="font-semibold text-white">sous 48 heures</span>.
+                     </p>
+                   </AnimatedFadeIn>
+       
+                   <AnimatedFadeIn>
+                     <ContactForm />
+                   </AnimatedFadeIn>
+                 </div>
+                 
+           {/* FOOTER */}
+        
+          <div className= "mt-5 mx-auto-w-6x1 px-6 py-12 text-center text-xs text-gray-500">
             <div>© 2026 GPE Solutions. Tous droits réservés.</div>
 
             <div className="mt-3 flex items-center justify-center gap-3">
@@ -362,7 +391,11 @@ export default function ExternaliserLaPaiePage() {
               </a>
             </div>
           </div>
-        </footer>
+        
+ {/*Fermeture du wrapper*/}  
+        </div>
+          
+
       </main>
     </>
   );

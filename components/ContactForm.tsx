@@ -67,6 +67,7 @@ export default function ContactForm() {
     if (!isValid) {
       setStatus({ type: "error", msg: "Vérifiez les champs en rouge." });
       return;
+      
     }
 
     try {
@@ -122,7 +123,6 @@ export default function ContactForm() {
     >
       {/* petit halo discret */}
       <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-gradient-to-br from-blue-600/10 via-indigo-600/5 to-transparent blur-3xl" />
-
       <div className="relative">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {/* Raison sociale */}

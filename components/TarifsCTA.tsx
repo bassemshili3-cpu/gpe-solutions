@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-
+import PartnershipLogos from "@/components/PartnershipLogos";
 
 /** Reveal 3D + expose visible pour staggers */
 export function Reveal3D({
@@ -193,7 +193,7 @@ function TarifsModal({
             filter: shown ? "blur(0px)" : "blur(10px)",
             transition: `transform ${DURATION}ms ${easeIOS}, opacity ${Math.max(
               260,
-              DURATION - 1400
+              DURATION - 140
             )}ms ${easeIOS}, filter ${DURATION}ms ${easeIOS}`,
           }}
         >
@@ -214,43 +214,31 @@ export default function TarifsCTA({
 
   return (
     <div className="mt-10">
-      <h2 className="mt-10 text-3xl md:text-3xl font-bold text-white text-center">
-        Nos astuces pour choisir le bon prestataire:
-      </h2>
+      <Reveal3D className="flex justify-center" rootRef={rootRef}>
+        {(visible) => <PartnershipLogos visible={visible} />}
+      </Reveal3D>
 
-      <div className="mt-6 max-w-4xl mx-auto space-y-4">
-        <p className="text-lg text-white/80 leading-relaxed">
-          Nous vous recommandons de choisir un prestataire qui apporte un cadre clair,
-          avec idéalement un calendrier de collecte/validation, des contrôles
-          systématiques, une DSN conforme, un respect strict de la confidentialité (la
-          paie implique des données très sensibles) et un interlocuteur réactif quand
-          une situation change (arrêt, prime, entrée/sortie etc).
-        </p>
+                <h2 className="mt-8 font-manrope text-4xl text-center text-white">
+                 L'intérêt de combiner outils paie et analyse de data  
+                </h2>
 
-        <p className="mt-8 text-lg text-white/80 leading-relaxed">
-          Le choix dépend généralement de votre volume de salariés, du budget, de la
-          complexité sociale et du besoin d’accompagnement au quotidien. Par
-          expérience, un cabinet d&apos;expertise comptable et certains services dédiés
-          proposent généralement une externalisation &quot;premium&quot; dans le sens où ils
-          utilisent des logiciels de paie haut de gamme et coûteux, tel que Silae ou
-          encore Sage, qui permettent de traiter de gros volumes de fiches de paies de
-          façon fiable.
-        </p>
+      <p className="mt-13 max-w-4xl mx-auto text-center text-lg leading-relaxed text-white/80">
+        Pour faire simple, l’analyse de la donnée en paie permet au gestionnaire de paie de sécuriser et
+        fiabiliser les traitements en prenant du recul sur les informations qu’il
+        manipule au quotidien. Par exemple, En croisant et en comparant les variables d’un mois à
+        l’autre, elle aide à repérer plus facilement les anomalies, les incohérences, ou même les 
+        oublis auxquels tout gestionnaire est vulnérable. On peut sécuriser beaucoup de processus
+        en analysant de la data: d'un simple contrôle d'heure supplémentaire, aux spécificités les 
+        plus poussées d'une convention collective. En résumé, utiliser l'analyse de data pour traiter
+        la paye est un levier précieux pour pousser la fiabilité des contrôles de paie au niveau supérieur 
+      </p>
 
-        <p className="mt-8 text-lg text-white/80 leading-relaxed">
-          En revanche, nous constatons que pour les clients qui ont besoin d&apos;un
-          accompagnement plus important et régulier (souvent des TPE/PME), un service
-          d&apos;externalisation dédié à la paie, ou encore un gestionnaire de paie
-          indépendant, est une option à privilégier.
-        </p>
-
-        <p className="text-lg text-white/80 leading-relaxed">
-          En sollicitant le service d&apos;externalisation de la paie{" "}
-          <strong>GPE Solutions</strong>, vous évitez les zones floues : notre process
-          est simple, la production est sécurisée, et nous proposons des tarifs{" "}
-          <strong>clairs</strong> et <strong>abordables</strong>. Notre service est
-          premium et inclut l&apos;utilisation du logiciel Sage, une référence en paie.
-        </p>
+      <p className="mt-7 text-white/80 leading-relaxed max-w-4xl mx-auto text-center text-lg">
+        On peut sécuriser beaucoup de processus en analysant de la data: d'un simple contrôle 
+        d'heure supplémentaire, aux spécificités les plus poussées d'une convention collective.
+         En résumé, utiliser l'analyse de data pour traiter la paye est un levier précieux pour 
+         pousser la fiabilité des contrôles de paie au niveau supérieur 
+      </p>
 
       <div className="mt-8 flex justify-center">
         <button
@@ -263,7 +251,6 @@ export default function TarifsCTA({
       </div>
 
       <TarifsModal open={open} onClose={() => setOpen(false)} />
-    </div>
     </div>
   );
 }

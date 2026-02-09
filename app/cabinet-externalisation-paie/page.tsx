@@ -1,8 +1,12 @@
 // “Cabinet externalisation paie”
+"use client";
 import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import ContactForm from "@/components/ContactForm";
 import ClearHashOnLoad from "@/components/ClearHashOnLoad";
 import Head from "next/head";
+import TarifsCTA from "@/components/TarifsCTA"
+
+
 
 export default function CabinetExternalisationPaiePage() {
   const schema = {
@@ -111,10 +115,10 @@ export default function CabinetExternalisationPaiePage() {
                 <div className="hidden md:flex items-center gap-3">
                   <a
                     href="#contact"
-                    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-900 via-indigo-700 to-indigo-400 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
+                    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700/80 via-indigo-700/80 to-blue-600/80 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
                   >
                     Demander un avis
-                    <span className="transition group-hover:translate-x-0,5">→</span>
+                    
                   </a>
                 </div>
               </div>
@@ -138,63 +142,11 @@ export default function CabinetExternalisationPaiePage() {
               <AnimatedFadeIn>
                 <p className="mt-12 text-lg md:text-xl text-white/80 leading-[1.7] max-w-3xl mx-auto relative">
                   Beaucoup d’entreprises associent naturellement l’externalisation de la paie à un
-                  cabinet comptable. C’est logique, mais ce n’est pas toujours la meilleure
-                  option selon votre organisation, votre volume, et surtout votre besoin
-                  d’accompagnement au quotidien.
+                  cabinet comptable. À travers cette page nous allons vous aider à choisir votre
+                  prestataire de paie en fonction de critères concrets, puis vous montrer quand une 
+                  solution alternative devient plus pertinente, en particulier pour les TPE et PME.
                 </p>
               </AnimatedFadeIn>
-
-              <AnimatedFadeIn>
-                <p className="mt-6 text-lg md:text-xl text-white/80 leading-[1.7] max-w-3xl mx-auto relative">
-                  L’objectif de cette page est simple : vous aider à choisir en fonction de
-                  critères concrets, puis vous montrer quand une solution dédiée comme GPE
-                  Solutions devient plus pertinente, en particulier pour les TPE et PME.
-                </p>
-              </AnimatedFadeIn>
-
-              {/* 3 cartes (signature visuelle du site, conservées dans le hero) */}
-              <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    title: "Clarifier votre besoin",
-                    desc: "Souhaitez-vous un accompagnement global, ou une paie cadrée et fluide chaque mois ?",
-                    icon: <path d="M9 7h6M9 11h6M9 15h4M6 17V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12" />,
-                  },
-                  {
-                    title: "Comparer les options",
-                    desc: "Cabinet comptable, prestataire paie, ou solution hybride : les forces ne sont pas les mêmes.",
-                    icon: <path d="M3 17l6-6 4 4 7-7" />,
-                  },
-                  {
-                    title: "Sécuriser la conformité",
-                    desc: "Le bon choix est celui qui réduit les erreurs, les retards et les régularisations.",
-                    icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />,
-                  },
-                ].map((card) => (
-                  <div
-                    key={card.title}
-                    className="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-sm backdrop-blur transition-all duration-200 ease-out transform-gpu hover:-translate-y-1 hover:shadow-md hover:border-white/20"
-                  >
-                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:scale-[1.03]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        className="h-6 w-6"
-                        aria-hidden="true"
-                      >
-                        {card.icon}
-                      </svg>
-                    </div>
-                    <h2 className="mt-6 text-lg font-semibold text-white/95">
-                      {card.title}
-                    </h2>
-                    <p className="mt-2 text-sm text-white/75">{card.desc}</p>
-                  </div>
-                ))}
-              </div>
 
               {/* Lien texte (1/5) vers contact */}
               <div className="mt-10 flex justify-center">
@@ -217,243 +169,74 @@ export default function CabinetExternalisationPaiePage() {
           </div>
 
           {/* SECTION: Le vrai sujet (nuancer) */}
-          <section className="relative z-10 py-20 px-6 bg-transparent">
+          
             <div className="max-w-5xl mx-auto">
               <AnimatedFadeIn>
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                  Pourquoi la question “cabinet ou pas” revient aussi souvent ?
+                <h2 className= "mt-6 font-manrope text-4xl text-center text-white">
+                  Le point crucial pour une externalisation de la paie réussie
                 </h2>
               </AnimatedFadeIn>
 
               <AnimatedFadeIn>
                 <p className="mt-10 text-white/80 leading-relaxed max-w-4xl mx-auto text-center text-lg">
-                  Parce que la paie touche à la fois le quotidien des salariés et la conformité de
-                  l’entreprise. Quand on manque de temps, qu’un profil paie quitte l’entreprise,
-                  ou que les règles se complexifient, la première réaction est de chercher une
-                  structure “sûre”. Un cabinet comptable apparaît alors comme une évidence.
-                </p>
+                  Nous sommmes nombreux à savoir que le traitement de la paye est complexe 
+                  et qu'il implique la manipulation de données très sensibles. Partant de là, il est normal 
+                  de vouloir solliciter le service le plus sûr et qualitatif si on souhaite externaliser. 
+                  Un cabinet comptable apparaît alors souvent comme une évidence</p>
+
+                 <p className="mt-10 text-white/80 leading-relaxed max-w-4xl mx-auto text-center text-lg">
+                  Mais le point à ne pas négliger est qu'une externalisation réussie ne passe pas toujours 
+                  par un cabinet comptable. Les cabinets représentent une excellente option pour les employeurs
+                  à la tête d'entreprises avec des centaines de salariés. En pratique, nous constatons que pour les 
+                  petites et  moyennes entreprises, qui ont généralement besoin d'un accompagnement plus régulier,
+                   les services dédiés à la gestion de la paie, ou encore les gestionnaires de paie indépendants, peuvent 
+                  se révéler plus appropriés</p>
+
               </AnimatedFadeIn>
 
               <AnimatedFadeIn>
                 <p className="mt-6 text-white/80 leading-relaxed max-w-4xl mx-auto text-center text-lg">
-                  Mais en pratique, le bon choix dépend surtout de votre besoin réel : souhaitez-vous
-                  une coordination globale (compta, fiscalité, juridique), ou un cycle de paie
+                  Vous l'aurez compris, le plus important pour vous est avant tout d'avoir un prestataire <strong>adapté</strong> à
+                  votre situation : souhaitez-vous une coordination globale (compta, fiscalité, juridique), ou un cycle de paie
                   très cadré, réactif, et stable mois après mois ?
                 </p>
               </AnimatedFadeIn>
             </div>
-          </section>
-
-          {/* SECTION: Comparatif (table) */}
-          <section className="relative z-10 pb-24 px-6 bg-transparent">
-            <div className="max-w-6xl mx-auto">
-              <AnimatedFadeIn>
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                  Cabinet comptable, prestataire paie, logiciel assisté : quelles différences ?
+          <h2 className="mt-8 font-manrope text-4xl text-center text-white">
+                  L'avantage d'un service paie indépendant  
                 </h2>
-              </AnimatedFadeIn>
-
-              <div className="mt-12 overflow-x-auto">
-                <table className="w-full border-collapse border-2 border-white/35 bg-transparent">
-                  <thead>
-                    <tr className="border-b-2 border-white/30">
-                      <th className="px-6 py-4 text-left text-[12px] uppercase tracking-wide font-semibold text-white/90 border-r border-white/25">
-                        Option
-                      </th>
-                      <th className="px-6 py-4 text-left text-[12px] uppercase tracking-wide font-semibold text-white/90 border-r border-white/25">
-                        Pertinent si
-                      </th>
-                      <th className="px-6 py-4 text-left text-[12px] uppercase tracking-wide font-semibold text-white/90">
-                        Points d’attention
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr className="border-b border-white/15">
-                      <td className="px-6 py-4 font-medium text-white border-r border-white/20">
-                        Cabinet comptable
-                      </td>
-                      <td className="px-6 py-4 text-white/85 border-r border-white/20">
-                        Vous cherchez un accompagnement global et centralisé.
-                      </td>
-                      <td className="px-6 py-4 text-white/70 text-sm">
-                        Vérifier la réactivité paie/DSN, le périmètre inclus et l’organisation du support.
-                      </td>
-                    </tr>
-
-                    <tr className="border-b border-white/15 bg-white/[0.03]">
-                      <td className="px-6 py-4 font-medium text-white border-r border-white/20">
-                        Prestataire paie dédié
-                      </td>
-                      <td className="px-6 py-4 text-white/85 border-r border-white/20">
-                        Vous voulez un cycle mensuel fluide et un suivi orienté paie.
-                      </td>
-                      <td className="px-6 py-4 text-white/70 text-sm">
-                        S’assurer de la méthode de collecte/validation, des contrôles et de la traçabilité.
-                      </td>
-                    </tr>
-
-                    <tr className="bg-white/[0.03]">
-                      <td className="px-6 py-4 font-medium text-white border-r border-white/20">
-                        Logiciel avec assistance
-                      </td>
-                      <td className="px-6 py-4 text-white/85 border-r border-white/20">
-                        Vous voulez produire en interne avec un cadre et une aide ponctuelle.
-                      </td>
-                      <td className="px-6 py-4 text-white/70 text-sm">
-                        Temps interne requis, risques d’erreurs si les variables et les règles ne sont pas maîtrisées.
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              {/* Lien texte (2/5) vers contact */}
-              <div className="mt-10 flex justify-center">
-                <a
-                  href="#contact"
-                  className="text-sm font-semibold text-white/85 underline underline-offset-4 hover:text-white"
-                >
-                  Obtenir un avis rapide
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* SECTION: Critères de choix (sans carte) */}
-          <section className="relative z-10 pb-24 px-6 bg-transparent">
-            <div className="max-w-5xl mx-auto">
-              <AnimatedFadeIn>
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                  Les critères qui comptent vraiment pour choisir
-                </h2>
-              </AnimatedFadeIn>
-
-              <div className="mt-12 space-y-6 text-white/80 text-lg leading-relaxed">
-                <p>
-                  Avant de comparer des prix, clarifiez le périmètre : bulletins, DSN, entrées/sorties,
-                  attestations, formalités, support, et éventuellement la reprise d’historique. C’est
-                  souvent là que naissent les incompréhensions.
+                <p className="mt-7 text-white/80 leading-relaxed max-w-4xl mx-auto text-center text-lg">
+                 L'exemple idéal pour illustrer cette idée serait de prendre pour exemple notre service 
+                 d'externalisation GPE Solutions. Le fait d'être un service indépendant dédié à la paie 
+                 nous a permis d'avoir plus de temps pour développer des méthodes de travail innovantes et
+                 optimisées, dans l'optique de produire des fiches de paie les plus conformes possibles.
+                 Nous avons pris la décision de limiter le volumes de bulletins de paie que nous traitons par mois,
+                 afin d'introduire une méthode de travail complémentaire aux outils sophistiqués que l'on utilise déjà 
+                 pour traiter la paye: <strong>l'analyse de data.</strong>
                 </p>
-                <p>
-                  Ensuite, regardez la méthode de travail : comment les variables sont collectées,
-                  à quelle date, quelle est la phase de validation, comment les corrections sont gérées,
-                  et comment la traçabilité est assurée.
-                </p>
-                <p>
-                  Enfin, posez une question simple : que se passe-t-il quand le mois n’est pas “standard” ?
-                  Arrêt de travail, IJSS, subrogation, prime exceptionnelle, entrée/sortie, changement de contrat.
-                  La qualité d’un prestataire se voit dans ces situations.
-                </p>
-              </div>
-            </div>
-          </section>
 
-          {/* SECTION: Argument phare 1 (service dédié) */}
-          <section className="relative z-10 pb-24 px-6 bg-transparent">
-            <div className="max-w-6xl mx-auto">
-              <AnimatedFadeIn>
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                  L’avantage d’un service dédié : un accompagnement orienté paie
-                </h2>
-              </AnimatedFadeIn>
-
-              <div className="mt-10 max-w-5xl mx-auto text-white/80 text-lg leading-relaxed space-y-6">
-                <p>
-                  Une solution dédiée à la paie est construite autour d’un cycle mensuel : collecte,
-                  production, contrôles, validation, DSN, puis archivage. L’objectif est de réduire
-                  les frictions, d’éviter les zones grises, et de simplifier la prise de décision.
-                </p>
-                <p>
-                  Pour une TPE ou une PME, cela change tout : vous n’avez pas besoin d’un dispositif lourd,
-                  mais d’un cadre clair et de réponses rapides. Quand la paie est traitée comme un sujet
-                  à part entière, vous gagnez en stabilité et en sérénité.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* SECTION: Argument phare 2 (volumes limités + qualité) */}
-          <section className="relative z-10 pb-24 px-6 bg-transparent">
-            <div className="max-w-6xl mx-auto">
-              <AnimatedFadeIn>
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                  Une logique qualité : limiter le volume pour rester précis
-                </h2>
-              </AnimatedFadeIn>
-
-              <div className="mt-10 max-w-5xl mx-auto text-white/80 text-lg leading-relaxed space-y-6">
-                <p>
-                  Une erreur de paie se paie rarement une seule fois : elle entraîne des régularisations,
-                  des échanges, parfois des corrections DSN, et de la tension inutile. Pour réduire ce risque,
-                  l’organisation compte autant que la compétence.
-                </p>
-                <p>
-                  Chez GPE Solutions, l’idée est de conserver une capacité de contrôle réelle. Limiter le
-                  volume de bulletins traités permet de garder du temps pour les vérifications, le suivi,
-                  et la résolution propre des cas particuliers.
-                </p>
-              </div>
-            </div>
-          </section>
+           <TarifsCTA />
 
           {/* SECTION: Argument ultime (paie + data) */}
-          <section className="relative z-10 pb-28 px-6 bg-transparent">
-            <div className="max-w-6xl mx-auto">
-              <AnimatedFadeIn>
-                <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-                  Quand la paie s’appuie sur des contrôles data pour renforcer la conformité
+          
+            <div className="max-w-5xl mx-auto">
+             
+                <h2 className="mt-8 font-manrope text-4xl text-center text-white">
+                 Alors, besoin d'une entreprise d'externalisation paie ? 
                 </h2>
-              </AnimatedFadeIn>
+              
+                <p className="mt-10 text-white/80 leading-relaxed max-w-4xl mx-auto text-center text-lg">
+                 N'hésitez pas à nous contacter dès aujourd'hui, en remplissant le formulaire ci-dessous.
+                 Notre service est parfaitement adapté pour les TPE et les PME également, et notre équipe
+                 prendra contact avec vous le plus tôt possible</p>
 
-              <div className="mt-10 max-w-5xl mx-auto text-white/80 text-lg leading-relaxed space-y-6">
-                <p>
-                  Au-delà des contrôles classiques d’un logiciel de paie, il est possible d’ajouter une
-                  lecture “data” : repérer des anomalies récurrentes, comparer des évolutions d’un mois sur
-                  l’autre, détecter des incohérences sur certaines variables, et sécuriser le dépôt DSN.
-                </p>
-                <p>
-                  L’enjeu n’est pas de complexifier, mais de rendre la paie plus vérifiable. Cette approche
-                  est particulièrement utile lorsque l’entreprise grandit, que les variables se multiplient,
-                  ou que les règles conventionnelles deviennent plus exigeantes.
-                </p>
-
-                {/* CTA 2 (bouton) -> #contact (max 2 boutons) */}
-                <div className="pt-4 flex justify-center">
-                  <a
-                    href="#contact"
-                    className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-700 px-8 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
-                  >
-                    Parler de votre paie
-                    <span className="transition group-hover:translate-x-0,5">→</span>
-                  </a>
-                </div>
-
-                {/* Lien texte (3/5) vers contact */}
-                <div className="pt-2 flex justify-center">
-                  <a
-                    href="#contact"
-                    className="text-sm font-semibold text-white/85 underline underline-offset-4 hover:text-white"
-                  >
-                    Faire évaluer votre cycle mensuel
-                  </a>
-                </div>
-              </div>
-            </div>
-          
-
-          
-
-       
-          <div id="contact" className="max-w-3xl mx-auto scroll-mt-5">
-  <AnimatedFadeIn>
-    <h2 className="text-4xl font-bold text-white mb-2 text-center">
+           {/*Formulaire*/}
+            <div id="contact" className="max-w-3xl mx-auto scroll-mt-5">
+              <AnimatedFadeIn>
+    <h2 className="mt-10 text-4xl font-bold text-white mb-2 text-center">
       Formulaire de contact
     </h2>
-    ...
-
-              <p className="text-white text-center mb-12">
+     <p className="text-white text-center mb-12">
                 Réponse garantie{" "}
                 <span className="font-semibold text-white">sous 48 heures</span>.
               </p>
@@ -463,52 +246,13 @@ export default function CabinetExternalisationPaiePage() {
               <ContactForm />
             </AnimatedFadeIn>
           </div>
-        
-
-        {/* SECTION: FAQ */}
-          <div className="max-w-5xl mx-auto">
-            <AnimatedFadeIn>
-              <div className="text-center">
-                <h2 className="mt-10 inline-block rounded-full bg-blue-900 px-8 py-3 text-2xl md:text-3xl font-bold tracking-wide text-white shadow-sm">
-                  FAQ
-                </h2>
-              </div>
-            </AnimatedFadeIn>
-
-            <div className="mt-16 space-y-4">
-              {faq.map((item) => (
-                <details
-                  key={item.q}
-                  className="group relative overflow-hidden rounded-xl border border-blue-200 bg-gradient-to-b from-blue-50 to-white shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md group-open:from-blue-100 group-open:to-white"
-                >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-5">
-                    <span className="text-lg font-semibold text-blue-950">
-                      {item.q}
-                    </span>
-
-                    <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-blue-100/70">
-                      <span className="absolute h-0.5 w-4 bg-blue-900 transition-all duration-300 group-open:rotate-180" />
-                      <span className="absolute h-4 w-0.5 bg-blue-900 transition-all duration-300 group-open:opacity-0" />
-                    </span>
-                  </summary>
-
-                  <div className="grid grid-rows-[0fr] transition-all duration-300 ease-in-out group-open:grid-rows-[1fr]">
-                    <div className="overflow-hidden px-6 pb-6">
-                      <p className="text-gray-600 leading-relaxed">{item.a}</p>
-                    </div>
-                  </div>
-                </details>
-              ))}
-            </div>
           </div>
-        </section>
-
-        {/* ✅ IMPORTANT : on ferme le wrapper ici */}
-        </div>
-
+          <p><br></br> 
+          </p>
+         
         {/* FOOTER */}
-        <footer className="py-10 px-6 border-t border-blue-100 bg-white">
-          <div className="max-w-6xl mx-auto text-center text-xs text-gray-500">
+        
+  <div className= "mt-5 mx-auto-w-6x1 px-6 py-12 text-center text-xs text-gray-500">
             <div>© 2026 GPE Solutions. Tous droits réservés.</div>
 
             <div className="mt-3 flex items-center justify-center gap-3">
@@ -527,7 +271,9 @@ export default function CabinetExternalisationPaiePage() {
               </a>
             </div>
           </div>
-        </footer>
+        
+         {/* ✅ IMPORTANT : on ferme le wrapper ici */}
+        </div>
       </main>
     </>
   );
