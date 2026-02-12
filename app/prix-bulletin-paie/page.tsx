@@ -39,7 +39,7 @@ import Option1 from "@/components/option1"
 
         <meta
           name="description"
-          content="Prix d’un bulletin de paie : comprendre les modes de tarification, les facteurs qui font varier le coût, et obtenir un ordre d’idée grâce à notre grille tarifaire. Externalisation de la paie & DSN."
+          content="Prix d’un bulletin de paie : découvrez le coût, les facteurs qui font varier le coût, et obtenez un ordre d’idée grâce à notre grille tarifaire. Externalisation de la paie & DSN."
         />
 
         <script
