@@ -23,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta name="verify-admitad" content="2590e74bf1" />
         <title>
           Service d&apos;Externalisation de la paie pour une gestion fiable des fiches de paie de votre entreprise | Adapté
           TPE &amp; PME | GPE Solutions
@@ -32,7 +33,7 @@ export default function Home() {
           name="description"
           content="GPE Solutions: Votre entreprise d'externalisation experte en paie et DSN pour TPE et PME. Service fiable, conforme et accessible, avec un interlocuteur dédié."
         />
-<meta name="verify-admitad" content="2590e74bf1" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
