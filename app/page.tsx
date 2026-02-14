@@ -23,7 +23,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name="verify-admitad" content="2590e74bf1" />
         <title>
           Service d&apos;Externalisation de la paie pour une gestion fiable des fiches de paie de votre entreprise | Adapté
           TPE &amp; PME | GPE Solutions
